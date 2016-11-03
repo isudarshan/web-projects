@@ -1,0 +1,11 @@
+./dist/
+.idea
+*/target
+*.iml
+derby.log
+atlassian-ide-plugin.xml
+/bench/generated.sql
+/dist/md5sums
+/dist/output.txt
+/dist/updates.xml
+log.txt

@@ -1,0 +1,430 @@
+.section {
+    padding: 0 10px 0 10px;
+}
+
+.timesheetTable {
+    padding: 0;
+    width: 100%;
+}
+
+.timesheetTable tbody tr:first-child td:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+.timesheetTable tbody tr:first-child td:last-child {
+    border-radius: 0 6px 0 0;
+}
+
+.timesheetTable thead td:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+.timesheetTable tfoot tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
+
+.timesheetTable tfoot tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+
+.timesheetTable td {
+    color: #536e87;
+    height: 18px;
+}
+
+.timesheetTable tr.weekColumnRow td {
+    font: 16px/16px Geneva, Arial, Helvetica, sans-serif;
+    color: #536e87;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.timesheetTable tr.weekColumnRow td.borderless {
+    border: 0;
+}
+
+.timesheetTable tr.weekColumnRow td.project {
+    width: 250px;
+    border-width: 0;
+    color: #536e87;
+    text-align: left;
+    vertical-align: bottom;
+    padding-bottom: 1px;
+}
+
+.timesheetTable tr.weekColumnRow td.projectCode {
+    border: 0;
+    padding-bottom: 1px;
+    padding-left: 1.5em text-align : left;
+    vertical-align: bottom;
+}
+
+.timesheetTable tr.weekColumnRow td.spacer,
+.timesheetTable tr.weekColumnRow td.spacer,
+.timesheetTable tr.projectRow td.spacer {
+    width: 10px;
+    min-width: 0;
+}
+
+.timesheetTable tr.projectRow td.fold {
+    width: 16px;
+    vertical-align: top;
+    padding: 11px 2px 0 5px;
+}
+
+.timesheetTable tr.projectRow td.project {
+    width: 220px;
+    text-align: left;
+    font: 1em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    padding: 8px 0 0 0;
+    vertical-align: top;
+}
+
+.timesheetTable tr.projectRow td.projectCode {
+    text-align: left;
+    font-weight: normal;
+    padding: 8px 0 0 7px;
+    vertical-align: top;
+    width: 6em;
+}
+
+.timesheetTable tr.projectRow td.customer {
+    font-weight: normal;
+    text-align: left;
+    padding-left: 3px;
+}
+
+.timesheetTable tr.projectRow td.project a:link {
+    text-decoration: none;
+    color: #536e87;
+}
+
+.timesheetTable tr.projectRow td.project a:visited {
+    text-decoration: none;
+    color: #536e87;
+}
+
+.timesheetTable tr.projectRow td.project a:hover {
+    text-decoration: underline;
+    color: #536e87;
+}
+
+.timesheetTable tr.projectRow td.project a:active {
+    text-decoration: none;
+    color: #536e87;
+}
+
+.timesheetTable tr.projectRow td {
+    font: normal 1.0em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    color: #536e87;
+    margin: 0;
+    padding: 0 0 1px 0;
+    text-align: center;
+    border-bottom: 1px solid #b9d3ef;
+}
+
+.timesheetTable tr.projectRow {
+    padding-bottom: 1px;
+}
+
+.timesheetTable tr.projectRow td a:visited {
+    font: 1.0em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.timesheetTable tr.projectRow td a:hover {
+    font: 1.0em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    color: #536e87;
+    text-decoration: underline;
+}
+
+.timesheetTable tr.projectRow td {
+    background-color: #eef6fe;
+}
+
+.timesheetTable tr.projectRow td.sunday,
+.timesheetTable tr.projectRow td.saturday,
+.timesheetTable tr.projectRow td.weekday {
+    font: 1.0em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    color: #536e87;
+    margin: 0;
+    text-align: right;
+    padding: 1px 0 0 0;
+    vertical-align: top;
+    width: 4em;
+}
+
+.timesheetTable .lastColumn {
+    width: 4em;
+    padding: 1em 1em 0 0 !important;
+}
+
+.timesheetTable tr.projectRow td.total {
+    font: 0.9em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    color: #536e87;
+    margin: 0;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 1em;
+}
+
+.timesheetTable tfoot .totalRow .grandTotal {
+    font-weight: bold;
+    padding-top: 0 !important;
+}
+
+.timesheetTable tr.customerRow td {
+    margin-top: 10px;
+    border-bottom: 1px solid #b9d3ef;
+}
+
+.timesheetTable tr.customerRow td.weekday {
+    margin-top: 10px;
+    background-color: #fefeff;
+}
+
+.timesheetTable tr.customerRow td.saturday {
+    margin-top: 10px;
+    background-color: #fefeff;
+}
+
+.timesheetTable tr.customerRow td.foldIcon {
+    margin-top: 10px;
+    background-color: #fefeff;
+    padding-left: 3px;
+    width: 9px
+}
+
+.timesheetTable .customerCell a, .timesheetTable .customerCell a:visited {
+    color: #536e87;
+}
+
+.timesheetTable tr.customerRow td.customerCell {
+    font: 1.0em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    color: #536e87;
+    background-color: #fefeff;
+    margin: 0;
+    padding: 6px 6px 0 6px;
+    text-align: left;
+}
+
+td.lockedday, td.lockeddaynocomment {
+    vertical-align: middle !important;
+    text-align: right !important;
+}
+
+td.lockedday {
+    padding: 0 12px 0 0 !important;
+}
+
+td.lockeddaynocomment {
+    padding: 0 23px 0 0 !important;
+}
+
+.timesheetTable input {
+    border: 1px solid #cfdbe6;
+    margin: 5px 1px 5px 0;
+    font: 1em/21px Geneva, Arial, Helvetica, sans-serif;
+    color: #536e87;
+    background-color: white;
+    text-align: center;
+    height: 21px;
+}
+
+.timesheetTable tr.totalRow {
+    background-color: #fefeff;
+}
+
+.timesheetTable tr.totalRow td {
+    font: 0.9em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    color: #536e87;
+    margin: 5px 5px 0 0;
+    text-align: right;
+}
+
+.timesheetCommentsTable {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.timesheetPersisted {
+    font: 0.9em Geneva, Arial, Helvetica, sans-serif;
+    color: #233e55;
+}
+
+.timesheetCommentsTable td {
+    color: #536e87;
+    border: 0;
+}
+
+.timesheetTextarea {
+    border: 1px solid #b3c0cb;
+    border-radius: 4px;
+    margin: 0 0 5px 0;
+    font: 0.9em/1.5 Geneva, Arial, Helvetica, sans-serif;
+    overflow-y: auto;
+    color: #536e87;
+    background-color: white;
+    width: 99.5%;
+}
+
+.commentBody p {
+    font: 1.0em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    color: #3b556d;
+    padding: 5px 5px 0 5px;
+    margin: 0;
+}
+
+div.wicket-modal div.w_content_3 {
+    border: 0;
+    padding: 0;
+}
+
+.weekColumnRow .lockSpace {
+    width: 25%;
+    min-width: 10px;
+    float: left;
+    text-align: left;
+    border: 0 !important;
+    background: transparent !important;
+    min-height: 1px;
+}
+
+.previousWeek {
+    margin-right: 0.5em;
+}
+
+.nextWeek {
+    margin-left: 0.5em;
+}
+
+.bookAll {
+    font-size: 75%;
+    padding: 0;
+    margin: -2px 5px 0 0;
+    color: #6d87a1;
+}
+
+.iconLink {
+    font-size: 75%;
+    color: #9fa0a1;
+}
+
+.iconLink:hover, .iconLinkOn {
+    color: #5190c5;
+    font-size: 75%;
+}
+
+.iconLinkOn {
+    color: #e88b1d;
+}
+
+.timesheetSectionHeader {
+    background: transparent !important;
+    opacity: 0.6;
+}
+
+.timesheetSubmitTable {
+    width: 100%;
+    padding: 5px 22px;
+}
+
+.store {
+    margin-right: 0 !important;
+}
+
+.timesheetSubmitTable .storeTd {
+    text-align: right;
+}
+
+.timesheetSubmitTable .feedback {
+    text-align: center;
+    color: #536e87;
+}
+
+.locked {
+    opacity: 0.5;
+}
+
+.timesheetTable .options {
+    width: 20px;
+    min-width: 20px;
+    vertical-align: top;
+    padding-top: 1em !important;
+    text-align: left !important;
+}
+
+.timesheetTable thead .day {
+    text-align: right;
+}
+
+.timesheetTable thead .day .container,
+.timesheetTable tfoot .container {
+    float: right;
+    padding-right: 2px;
+}
+
+.timesheetTable thead .day .container .name {
+    text-align: center;
+}
+
+.timesheetTable thead .day .container .date {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.timesheetTable input,
+.timesheetTable thead .day .container,
+.timesheetTable tfoot .container {
+    width: 3em;
+}
+
+.timesheetTable thead .day .container,
+.timesheetTable tfoot .container {
+    text-align: center;
+
+}
+
+.timesheetTable .lockSpace .fa:hover {
+    color: #555;
+}
+
+.lockedComment {
+    color: #536e87;
+}
+
+.lockedCell {
+    vertical-align: middle !important;
+    padding: 4px 6px 0 0 !important;
+}
+
+.filterContainer {
+    float: right;
+    padding-bottom: 5px;
+}
+
+.filter {
+    text-align: left;
+    width: 15em;
+    border: 1px solid #9ABBD9;
+}
+
+.timesheet_options_icon {
+    color: #7d7d7d;
+}
+
+.timesheet_options {
+    display: none;
+    text-align: right;
+    font: 1em/1.1 Geneva, Arial, Helvetica, sans-serif;
+    color: #536e87;
+    margin: 5px 0;
+}
+
+.border_inlet_right {
+    margin-right: 15px;
+}

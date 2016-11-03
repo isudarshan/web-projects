@@ -1,0 +1,3 @@
+AccountId(PK) ----------- BigInt
+Balance
+       ----------- double 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  
+  
+<hibernate-mapping>
+    <class name="com.hms.domain.sub.LabAdmin" table="labadmin">
+        <id column="id" name="id" type="java.lang.Long">
+            <generator class="native" />
+        </id>
+		
+        <property column="doctorId" name="doctorId" type="java.lang.String" />
+        <property column="userName" name="userName" type="java.lang.String" />
+        <property column="patientId" name="patientId" type="java.lang.String" />
+        <property column="testFee" name="testFee" type="java.lang.String" />
+        <property column="uploadReport" name="uploadReport" type="binary" />
+        <property column="doctorName" name="doctorName" type="java.lang.String" />
+        <property column="patientName" name="patientName" type="java.lang.String" />
+        <property column="testSuggested" name="testSuggested" type="java.lang.String" />
+        <property column="report" name="report" type="java.lang.String" />
+        <property column="photo" name="photo" type="binary" />
+		
+		
+    </class>
+</hibernate-mapping>

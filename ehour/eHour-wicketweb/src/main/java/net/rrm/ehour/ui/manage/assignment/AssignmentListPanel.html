@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" xml:lang="en" lang="en">
+
+<body>
+
+<wicket:panel>
+	<div wicket:id="border">
+	
+		<table class="contentTable" style="width: 95%">
+		  <tr>
+		      <td colspan="5">
+		          <label wicket:for="filterToggle"><wicket:message key="admin.assignment.hideInactive" /> <input style="border:0" wicket:id="filterToggle" type="checkbox" /></label>
+		          <br /><br />
+		      </td>
+		  </tr>
+		
+			<tr>
+				<th></th>
+				<th><wicket:message key="admin.assignment.projectHeader" /></th>
+				<th><wicket:message key="admin.assignment.startHeader" /></th>
+				<th><wicket:message key="admin.assignment.endHeader" /></th>		
+			</tr>
+			
+			<span wicket:id="assignments">
+				<tr>
+					<td valign="top" rowspan="2"><a wicket:id="imgLink"><i class="fa fa-pencil-square-o"></i></a></td>
+					<td class="main project" style="padding-right: 1em">
+                        <a wicket:id="itemLink"><span wicket:id="project"></span></a>
+                        <br />
+                        <span wicket:id="customer"></span>
+                    </td>
+					<td valign="top" class="main date" style="padding-right: 1em" wicket:id="dateStart"></td>
+					<td valign="top" class="main date" wicket:id="dateEnd"></td>
+				</tr>
+				<tr>
+					<td colspan="4" class="extra">
+						<wicket:message key="admin.assignment.typeHeader" />
+						<span wicket:id="assignmentType"></span>
+						;&nbsp;
+						<wicket:message key="admin.assignment.roleHeader" />
+						<span wicket:id="role"></span>
+						;&nbsp;
+						<wicket:message key="admin.assignment.rateHeader" />
+						<span wicket:id="currency"></span>
+						<span wicket:id="rate"></span>
+					</td>
+				</tr>
+			</span>
+		</table>
+
+        <div class="assignment_footer" wicket:id="footer"></div>
+    </div>
+</wicket:panel>
+
+</body>
+
+</html>

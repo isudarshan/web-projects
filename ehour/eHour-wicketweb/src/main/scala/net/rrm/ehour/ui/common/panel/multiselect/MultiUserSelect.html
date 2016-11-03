@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html
+        xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+        xmlns="http://www.w3.org/1999/xhtml">
+
+<body>
+<wicket:panel>
+
+    <div class="usersFilter">
+        <div class="p">
+            <div class="filter floatLeft">
+                <input class="textInput searchInput" style="width: 17.5em" id="filterUserInput" type="text" placeholder="Filter..."/>
+            </div>
+        </div>
+    </div>
+
+    <br clear="all"/>
+
+    <div class="floatLeft selectPanel">
+
+        <div wicket:id="allBorder" class="inline" style="width:100%">
+            <div class="listScroll maxWidth inline userList" id="allUsers">
+                <table class="entrySelectorTable">
+                    <thead>
+                    <tr>
+                        <th>
+                            <wicket:message key="multiuserselect.availableUsers"/>
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr wicket:id="users" class="row">
+                        <td class="name filterable" wicket:id="name"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="floatRight selectPanel">
+        <div wicket:id="selectedContainer" class="selectedContainer inline">
+            <div class="listScroll maxWidth inline userList" id="selectedUsers">
+                <table class="entrySelectorTable">
+                    <thead>
+                    <tr>
+                        <th class="selectedUserHeader">
+                            <wicket:message key="multiuserselect.selectedUsers"/>
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr wicket:id="selectedUsers" class="row">
+                        <td class="name" wicket:id="name"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <br clear="all"/>
+</wicket:panel>
+
+</body>
+
+</html>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" pageWidth="595" pageHeight="842" columnWidth="575" leftMargin="10" rightMargin="10" topMargin="20" bottomMargin="20" uuid="fd6d241d-465f-4915-8b7a-a1bba5826d12">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="studentId" class="java.lang.String"/>
+	<field name="internalOne" class="java.lang.String"/>
+	<field name="internalTwo" class="java.lang.String"/>
+	<field name="attendance" class="java.lang.String"/>
+	<field name="assignment" class="java.lang.String"/>
+	<field name="totalMarks" class="java.lang.Integer"/>
+	<field name="year" class="java.lang.String"/>
+	<field name="branch" class="java.lang.String"/>
+	<field name="semister" class="java.lang.String"/>
+	<field name="paper" class="java.lang.String"/>
+	<field name="numberOfWorkingDays" class="java.lang.String"/>
+	<field name="numberOfPresentedDays" class="java.lang.String"/>
+	<field name="grandTotal" class="java.lang.String"/>
+	<field name="paperCode" class="java.lang.String"/>
+	<field name="hasAssignment" class="java.lang.String"/>
+	<field name="howMany" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="122" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="519aeced-6d84-4efe-bc55-53406d1c015b" x="139" y="4" width="420" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SRI DURGA MALLESWARA SIDDARTHA MAHILA KALASALA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0daccb2b-367f-4437-b72d-b1849b96dd3e" x="220" y="24" width="164" height="20"/>
+				<textElement/>
+				<text><![CDATA[Vijayawada - 10, Andhra Pradesh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d2e78dc2-0cb7-4736-a33e-a13bde9ad757" x="167" y="44" width="286" height="20"/>
+				<textElement textAlignment="Center">
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Affiliated to Krishna University, Machalipatnam.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d28e74a0-bd0e-4f58-9249-055cbe50a5f6" x="136" y="64" width="348" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[INTERNAL ASSESMENT - CONSOLIDATED MARKS STATEMENT]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="080bdf89-c21e-4eb0-b3ef-65f7c97af072" mode="Transparent" x="11" y="4" width="125" height="105"/>
+				<imageExpression><![CDATA["college logo.JPG"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="1" y="0" width="57" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Semester]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="58" y="0" width="230" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="288" y="0" width="287" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Conducted Hours:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="288" y="28" width="81" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tests 20 M]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="484" y="28" width="91" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Attendance 5 M]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="1" y="56" width="57" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Course Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="1" y="112" width="57" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Regd.No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="58" y="112" width="81" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[      IA - I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="139" y="112" width="81" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[      IA - II]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="220" y="112" width="81" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[   Marks
+   out of]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="301" y="112" width="68" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Assignment
+Marks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="369" y="112" width="70" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Attendance
+Marks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="439" y="112" width="65" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Internal
+Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="504" y="112" width="71" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5947b7c9-e803-4dbb-8cd2-a38ef270f8a9" x="1" y="28" width="57" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{semister}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="48ec9734-b806-4371-b7d7-5d9b6870dc31" x="58" y="28" width="230" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branch}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cbf52476-28c7-4669-b801-5c9068453bb5" x="58" y="56" width="517" height="56"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paper}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e09731ed-7046-45f4-828e-3e5f8747ea4d" x="488" y="0" width="54" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numberOfPresentedDays}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2df8ba9d-6126-4fde-bd51-d02580785346" x="1" y="84" width="57" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paperCode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="06cf4d05-7f7d-42f0-8590-1d4f54bbba64" x="369" y="30" width="84" height="26"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Assignment
+Marks
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="09ac14e7-5f56-40be-897c-891b195bac89" x="453" y="30" width="31" height="26"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{hasAssignment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="45eb634f-c7a7-4257-8052-550ab0e87572" x="100" y="116" width="36" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{howMany}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d4dd904-1138-4b26-8e0c-db531e8591be" x="172" y="116" width="48" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{howMany}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1be56fb7-102d-468e-b44e-4ee50583e28e" x="278" y="117" width="20" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{howMany}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="1" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement uuid="f5075eef-fcc0-46ec-b617-188aceaca328" x="1" y="0" width="57" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{studentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="53b5f17a-68b5-4282-82d6-a8aec72e48ef" x="58" y="0" width="81" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{internalOne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="80fab892-6529-4aa6-a959-98a43bc3e0e4" x="139" y="0" width="81" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{internalTwo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="777a7a95-8c16-4edc-8782-c7c0408b8d3d" x="220" y="0" width="81" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalMarks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="49ed2188-9a4e-417f-94a6-f50bda9e964b" x="369" y="0" width="70" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{attendance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="75f34e0f-4ccd-4750-aded-2f8f1a257613" x="439" y="0" width="65" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{grandTotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="49916543-4b7e-4c29-8b17-71e494e855d7" x="504" y="0" width="71" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="1396395b-b6b3-4c13-b314-f2fa8ef948ad" x="301" y="0" width="68" height="28"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{assignment}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="e88edda3-480a-4d50-aed8-d19d224937ac" x="188" y="1" width="233" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sai Teja Infotech - Re-Defining IT, Vijayawada -10]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="3fba1690-9103-4f05-bd7b-4f8f0a21e47e" x="439" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="7259e7d6-4b06-435c-8ac6-af61df228860" x="519" y="0" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1ee0f613-46a8-4029-8e82-fe00d72da3bc" x="1" y="0" width="71" height="20"/>
+				<textElement/>
+				<text><![CDATA[Report Date :]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="a5f07551-1281-4d4e-a4f7-2753a227ee73" x="72" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

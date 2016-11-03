@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" xml:lang="en" lang="en">
+
+<body>
+
+<wicket:panel>
+	<div wicket:id="entrySelectorFrame" class="entrySelector">
+	
+		<form onsubmit="return false;" wicket:id="filterForm" style="margin: 0; padding: 0">
+            <p>
+                <span wicket:id="filterInputContainer" class="floatLeft">
+					<input class="textInput searchInput" wicket:id="listFilter" type="text"/>
+
+                    <wicket:child></wicket:child>
+                    <br/>
+				</span>
+
+                <span class="filters floatRight">
+                    <a wicket:id="filterToggle"><span wicket:id="filterIcon" class="fa fa-toggle-on"></span></a>
+                    &nbsp;
+                    <a wicket:id="toExcel"><span class="fa fa-file-excel-o"></span></a>
+                </span>
+            </p>
+        </form>
+
+        <br clear="all" style="line-height: 0.2em"/>
+	
+		<div wicket:id="blueBorder" class="inline" style="padding-top: 0; margin-top: 10px;">
+            <div class="listScroll inline" id="listContents" wicket:id="listScroll">
+                <table class="entrySelectorTable">
+
+                    <thead>
+                        <tr>
+                            <th wicket:id="headers"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr wicket:id="itemList" class="filterRow">
+                            <td wicket:id="child"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+</wicket:panel>
+
+</body>
+
+</html>

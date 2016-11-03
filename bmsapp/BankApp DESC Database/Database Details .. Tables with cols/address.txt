@@ -1,0 +1,9 @@
+AddressId(PK) -------------  BigInt
+DoorNo        -------------  varchar
+StreetName    -------------  varchar
+City          -------------  varchar
+Country       -------------  varchar
+District      -------------  varchar
+State         -------------  varchar
+pincode
+       -------------  bigint

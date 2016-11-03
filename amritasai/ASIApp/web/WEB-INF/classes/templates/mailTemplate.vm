@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset="UTF-8" />
+<title></title>
+</head>
+
+<body>
+<center>
+<table cellpadding="0" cellspacing="0" border="0" width="600" style="text-align:left;">
+<tr>
+<td height="20">
+<div style="line-height:0px; font-size:1px; position:absolute;">&nbsp;</div>
+</td>
+</tr>
+<tr height="65">
+<td>
+	<table cellpadding="0" cellspacing="0" border="0" height="65" width="100%">
+	<tr>
+	
+	<!--HEADER TEXT-->
+	<td height="65" width="325" valign="top" style="font-family:Arial, Verdana; font-size:18px; color:#FFF; font-weight:bold;" bgcolor="#3bbbe9">
+	<span style="font-size:10px;"><br /><br /></span>
+	&nbsp;&nbsp;&nbsp;The email you've been waiting for!
+	</td>
+	
+	
+	<!--DOWNLOAD LINK AREA-->
+	<td height="65" width="186" bgcolor="#3bbbe9" valign="middle">
+	<span style="font-size:10px;"><br /></span>
+	
+	</td>
+	
+	</tr>
+	</table>
+</td>
+</tr>
+<!--SPACER-->
+<tr>
+<td height="26"><div style="line-height:0px; font-size:1px; position:absolute;">&nbsp;</div></td>
+</tr>
+<tr>
+<td>
+<!--CONTENT TABLE-->
+	<table cellpadding="0" width="600" cellspacing="0" border="0">
+	<tr>
+	<!--LEFT COLUMN CONTENT-->
+	<td width="337" valign="top" style="font-family:Verdana, Arial; font-size:12px; padding-left:10px; padding-right:10px;">
+	<div style="font-family:Verdana, Arial; font-size:14px; font-weight:bold;">Welcome To Amrita Sai !</div>
+	<br />
+	<br />
+	Dear <strong>${student.firstName} ${student.lastName}</strong>,
+	<br />
+	<br />
+	Today, We have generated your Reg.ID, Which is <strong>${student.studentId}</strong> and Password is <strong>${appUser.password}</strong>. Immediately change your password after first login.
+	<br />
+	<br />
+        For other information contact <a href="amritasaicollegevijayawada@gmail.com">amritasaicollegevijayawada@gmail.com</a>
+        <br />
+	<br />
+        <center>Thank You,</center>
+        <br />
+	<br />
+	</td>
+	
+	<!--RIGHT COLUMN CONTENT-->
+	</tr>
+	</table>
+
+</td>
+</tr>
+
+<!--FOOTER-->
+<tr>
+<td height="3" style="border-top:3px double #e4e4e4; text-align:center; font-family:Verdana, Arial; font-size:12px;">
+<br />
+<strong>Amrita Sai</strong><br /><br />
+<a href="#">amritasaicollegevijayawada@gmail.com</a><br />
+
+</td>
+</tr>
+</table>
+<br />
+
+</center>
+</body>
+</html>

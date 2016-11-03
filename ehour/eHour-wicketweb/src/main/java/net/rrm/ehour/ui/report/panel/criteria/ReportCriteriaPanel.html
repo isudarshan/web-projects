@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" >
+<html xmlns:wicket="http://ehour.nl"
+      xmlns="http://www.w3.org/1999/xhtml">
+
+<body>
+<wicket:panel>
+    <div wicket:id="border">
+        <form wicket:id="criteriaForm" style="padding: 0;margin:0">
+
+            <!-- DATE SELECTION -->
+            <div class="dateContainer">
+                <div class="dateCriteria">
+                    <wicket:message key="report.criteria.reportRange"/>:
+                </div>
+
+                <div class="dateInputLoc">
+
+                    <input class="dateInput" type="text" wicket:id="reportCriteria.userSelectedCriteria.reportRange.dateStart"/>
+                    &nbsp;&nbsp;
+                    <wicket:message key="report.criteria.until"/>
+                    &nbsp;&nbsp;
+                    <input class="dateInput" type="text" wicket:id="reportCriteria.userSelectedCriteria.reportRange.dateEnd"/>
+                </div>
+                <br clear="all"/>
+
+                <div class="dateCriteria">
+                    <wicket:message key="quickDates"/>:
+                </div>
+
+                <div class="dateInputLoc">
+                    <select class="textInputSmall" wicket:id="quickWeek"></select>
+                    <select class="textInputSmall" wicket:id="quickMonth"></select>
+                    <select class="textInputSmall" wicket:id="quickQuarter"></select>
+                </div>
+
+                <br clear="all"/>
+
+                <wicket:enclosure child="lockedDate">
+                    <div class="dateCriteria">
+                        <wicket:message key="report.criteria.lock"/>:
+                    </div>
+
+                    <div class="dateInputLoc">
+                        <select class="textInputSmall" wicket:id="lockedDate"> </select>
+                    </div>
+
+                    <br clear="all"/>
+                </wicket:enclosure>
+
+            </div>
+
+            <div style="float: right; margin-right: 15px">
+                <wicket:enclosure child="reportRole">
+                    <wicket:message key="report.useRole"/>
+                    <select class="textInputSmall" wicket:id="reportRole" ></select>
+                </wicket:enclosure>
+            </div>
+
+
+            <!-- CUSTOMER AND PROJECT BLOCK -->
+
+            <br/><br/>
+
+            <br clear="all"/>
+
+            <div wicket:id="customerProjectsBorder">
+                <!-- CUSTOMER SELECTION -->
+                <div class="leftColumn">
+                    <div class="foldIcon">
+                        <a wicket:id="clearCustomer"  wicket:message="title:report.criteria.clear.tooltip">
+                            <i class="fa fa-trash-o"></i>
+                        </a>
+                        <a href="#" onclick="return toggleFilter('#customerFilter')" id="customerFold"  wicket:message="title:report.criteria.options.tooltip">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                    <b><wicket:message key="filter.customer"/></b>
+                    <div id="customerFilter" class="filterContainer hidden">
+                        <input id="customerFilterInput" class="textInput searchInput floatLeft" type="text" placeholder="Filter..." />
+                        &nbsp;&nbsp;
+                        <wicket:message key="report.sortOn"/> <select wicket:id="customerSort" class="textInputSmall"></select><br/>
+                    </div>
+
+                    <select id="customerSelect" wicket:id="reportCriteria.userSelectedCriteria.customers" class="textInputSmall reportCriteriaDropdown"></select>
+                    <br/>
+
+                    <div class="toggleLabel">
+                        <label wicket:for="reportCriteria.userSelectedCriteria.onlyActiveCustomers"><wicket:message key="report.onlyActiveCustomers"/></label>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;<input wicket:id="reportCriteria.userSelectedCriteria.onlyActiveCustomers" type="checkbox"/>
+                    <br/>
+                </div>
+
+                <!-- PROJECT SELECTION -->
+                <div class="rightColumn">
+                    <div class="foldIcon">
+                        <a wicket:id="clearProject"  wicket:message="title:report.criteria.clear.tooltip">
+                            <i class="fa fa-trash-o"></i>
+                        </a>
+
+                        <a href="#" onclick="return toggleFilter('#projectFilter')" id="projectFold"  wicket:message="title:report.criteria.options.tooltip">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+
+                    <b><wicket:message key="filter.project"/></b><br/>
+
+                    <div id="projectFilter" class="filterContainer hidden">
+                        <input id="projectFilterInput" class="textInput searchInput floatLeft" type="text" placeholder="Filter..." />
+                        &nbsp;&nbsp;
+                        <wicket:message key="report.sortOn"/> <select wicket:id="projectSort" class="textInputSmall"></select><br/>
+                    </div>
+
+                    <select id="projectSelect" wicket:id="reportCriteria.userSelectedCriteria.projects" class="textInputSmall reportCriteriaDropdown"></select>
+                    <br/>
+
+                    <div class="toggleLabel">
+                        <label wicket:for="reportCriteria.userSelectedCriteria.onlyActiveProjects"><wicket:message key="report.onlyActiveProjects"/></label>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;<input wicket:id="reportCriteria.userSelectedCriteria.onlyActiveProjects" type="checkbox"/>
+                    <br/>
+                    <div class="toggleLabel">
+                        <label wicket:for="reportCriteria.userSelectedCriteria.onlyBillableProjects"><wicket:message key="report.onlyBillableProjects"/></label>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;<input wicket:id="reportCriteria.userSelectedCriteria.onlyBillableProjects" type="checkbox"/>
+                </div>
+
+                <br clear="all"/>
+            </div>
+
+            <br/>
+
+            <wicket:container wicket:id="userDepartmentPlaceholder"></wicket:container>
+
+            <div class="resetCriteria">
+                <a class="button" onclick="this.blur();" wicket:id="resetCriteria">
+                    <span><wicket:message key="report.resetCriteria"/></span>
+                </a>
+
+                <a class="button floatRight"  onclick="this.blur();" wicket:id="createReport">
+                    <span><wicket:message key="report.createReport"/></span>
+                </a>
+            </div>
+        </form>
+        <br/> <br/>
+    </div>
+
+    <wicket:fragment wicket:id="userDepartmentCriteria">
+        <div wicket:id="deptUserBorder">
+            <div class="leftColumn">
+                <div class="foldIcon">
+                    <a wicket:id="clearDepartment" wicket:message="title:report.criteria.clear.tooltip">
+                        <i class="fa fa-trash-o"></i>
+                    </a>
+
+                    <a href="#" onclick="return toggleFilter('#departmentFilter')"  wicket:message="title:report.criteria.options.tooltip">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                </div>
+
+                <b><wicket:message key="filter.department"/></b><br/>
+
+                <div id="departmentFilter" class="filterContainer hidden">
+                    <input id="departmentFilterInput" class="textInput searchInput floatLeft" type="text" placeholder="Filter..." />
+                </div>
+
+                <select id="departmentSelect" wicket:id="reportCriteria.userSelectedCriteria.userDepartments" class="textInputSmall reportCriteriaDropdown"></select>
+                <br/>
+            </div>
+
+            <div class="rightColumn">
+                <div class="foldIcon">
+                    <a wicket:id="clearUser" wicket:message="title:report.criteria.clear.tooltip">
+                        <i class="fa fa-trash-o"></i>
+                    </a>
+
+                    <a href="#" onclick="return toggleFilter('#userFilter')" wicket:message="title:report.criteria.options.tooltip">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                </div>
+
+                <b><wicket:message key="filter.user"/> </b><br/>
+
+                <div id="userFilter" class="filterContainer hidden">
+                    <input id="userFilterInput" class="textInput searchInput floatLeft" type="text" placeholder="Filter..." />
+                </div>
+
+                <select id="userSelect" wicket:id="reportCriteria.userSelectedCriteria.users" class="textInputSmall reportCriteriaDropdown"></select>
+                <br/>
+
+                <div class="toggleLabel">
+                    <label wicket:for="reportCriteria.userSelectedCriteria.onlyActiveUsers"><span wicket:id="onlyActiveUsersLabel"></span></label>
+                    </div>
+                &nbsp;&nbsp;&nbsp;<input wicket:id="reportCriteria.userSelectedCriteria.onlyActiveUsers" type="checkbox"/>
+            </div>
+
+            <br clear="all"/>
+        </div>
+    </wicket:fragment>
+</wicket:panel>
+
+</body>
+
+</html>  

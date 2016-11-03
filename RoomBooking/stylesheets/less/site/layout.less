@@ -1,0 +1,96 @@
+/*************** RBS / layout *******************/
+.navbar {
+	 .logo {margin-right:10px;}
+}
+
+.location-filter, .fc-event { color:white;}
+.location-filter, .fc-event, .fc-future, .fc-today:hover {cursor:pointer;}
+
+.location-row{
+	a {border-radius:0;}
+}
+.no-top-rounded, .no-top-rounded .panel-heading {
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+}
+.building-row a {
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+}
+.fc-future:hover  {background:#E8E8E8; }
+.fc-today:hover {background:#D6CED1;}
+.fc-past {background:#D1D1D1; opacity: 0.8;}
+
+/* Event Status */
+.pending {opacity: 0.8; color:@brand-warning; background: white !important;
+	&:before {
+	  content:"\e085";
+	  font-family:"Glyphicons Halflings";
+	  line-height:1;
+	  float:left;
+	  padding: 1px 3px 1px 1px;
+	}
+	&:hover {color:@brand-warning;}
+}
+.denied {opacity: 0.4; background: white !important; color:@gray;
+	&:hover {color:@gray;}
+	&:before {
+	  content:"\e014";
+	  font-family:"Glyphicons Halflings";
+	  line-height:1;
+	  float:left;
+	  padding: 1px 3px 1px 1px;
+	}
+}
+
+/* Various Helper Classes */
+.append {margin-bottom:10px !important;}
+.label-login {background:green;}
+.label-cookie {background:purple;}
+.label-error {background:red;}
+.label- {background:black;}
+mark, .mark {padding:0; background-color: #FFFF99;}
+
+/* Forms */
+#dropdown-signin form {
+	padding:10px;
+	input.form-control {width:250px;}
+}
+fieldset {margin-bottom:20px;}
+.filter-pushdown {margin-top:24px;}
+
+/* Bookable resources */
+.table .checkbox {margin:0;}
+
+/* List View */
+.header-row {border-top:2px solid #222;}
+
+/* Alt Day View */
+.table-day {
+	tbody>tr>th,  tfoot>tr>th,  thead>tr>td, tbody>tr>td, tfoot>tr>td {padding:0;}
+	tbody tr td.booked {border-top:none; border-width:0; background: #f4f4f4; padding:5px;}
+	tbody tr td.booked:hover {cursor: pointer; -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.59);
+						-moz-box-shadow:    0px 0px 8px 0px rgba(0, 0, 0, 0.59);
+						box-shadow:         0px 0px 8px 0px rgba(0, 0, 0, 0.59);}
+
+	tr.hour {border-top:2px solid #ccc;
+		.current {border-top:2px solid red;}
+	}
+	tr td.free {border-right:1px dotted #ddd; }
+	.label {font-size:100%;}
+	.allday {padding:5px;}
+	.lower-op {opacity:0.5;}
+}
+
+/* ACE Editor */
+#editor {
+  min-height: 100px;
+}
+
+/* Custom and system fields modal picker */
+#customfielddata {
+	.fielddata {text-align: left;}
+	.fielddata:hover {cursor: pointer; background:@brand-primary; color:white}
+	.fielddata-selected {font-weight: bold; background:@brand-primary; color:white}
+}
+.pushdown {margin-top:25px;}

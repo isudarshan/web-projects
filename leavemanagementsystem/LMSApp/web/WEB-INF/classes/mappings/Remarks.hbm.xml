@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lms.domain.sub.Remarks" table="remarks" discriminator-value="0">
+        <id column="ID" name="id" type="java.lang.Integer">
+            <generator class="native" />
+        </id>
+        <property column="GUID" name="guid" type="java.lang.String" />
+
+        <property column="EMPLOYEEID" name="employeeId" type="java.lang.String" />        
+        <property column="TYPE" name="type" type="java.lang.String" />
+        <property column="STATUS" name="status" type="java.lang.String" />
+        <property column="REMARKS" name="remarks" type="java.lang.String" />       
+        <property column="LEAVECOUNT" name="leaveCount" type="java.lang.String" />
+        <property column="CREATEDON" name="createdOn" type="java.util.Date" />
+        <property column="CREATEDBY" name="createdBy" type="java.lang.Integer" />
+        <property column="MODIFIEDON" name="modifiedOn" type="java.util.Date" />
+        <property column="MODIFIEDBY" name="modifiedBy" type="java.lang.Integer" />
+        <property column="ACTIVE" name="active" type="java.lang.Integer" />
+
+
+    </class>
+</hibernate-mapping>

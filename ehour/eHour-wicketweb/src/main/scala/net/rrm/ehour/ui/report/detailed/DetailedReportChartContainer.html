@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+      xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<wicket:head>
+    <script src="js/highcharts.js"></script>
+    <script src="js/highcharts-exporting.js"></script>
+    <script src="js/detailed_report/detailedReportChart.js"></script>
+</wicket:head>
+
+<body>
+
+<wicket:panel>
+    <div id="buttons" style="padding: 0 0 5px;display:none">
+        <input type="radio" id="time" checked name="chartType"/><label for="time"><wicket:message key="report.chart.detailed.button.time"/></label>
+        <input type="radio" id="turnover" name="chartType"/><label for="turnover"><wicket:message key="report.chart.detailed.button.turnover" /></label>
+    </div>
+
+    <div id="chart"></div>
+</wicket:panel>
+
+</body>
+</html>

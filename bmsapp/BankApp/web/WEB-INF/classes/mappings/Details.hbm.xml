@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 21, 2014 10:52:37 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.bankapp.domain.Details" table="details" lazy="false">
+        <id name="detailsId">
+            <column name="DetailsId" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName">
+            <column name="First_Name" />
+        </property>
+        <property name="lastName">
+            <column name="Last_Name" />
+        </property>
+        <property name="mobile">
+            <column name="Mobile"/>
+        </property>
+        <property name="emailId">
+            <column name="EmailId"/>
+        </property>
+        <property name="picture">
+            <column name="Picture"/>
+        </property>
+        <property name="signature">
+            <column name="Signature"/>
+        </property>
+        <property name="accountType">
+            <column name="AccountType"/>
+        </property>
+        <property name="minimumBalance">
+            <column name="MinimumBalance"/>
+        </property>
+        <property name="parentName">
+            <column name="ParentName" />
+        </property>
+        <property name="designation">
+            <column name="Designation" />
+        </property>
+        <property name="DateOfBirth">
+            <column name="DOB"/>
+        </property>
+        <property name="documents">
+            <column name="Documents"/>
+        </property>
+        <property name="securityQuestion">
+            <column name="securityQuestion"/>
+        </property>
+        <property name="securityAnswer">
+            <column name="securityAnswer"/>
+        </property>
+        <many-to-one column="AddressID" name="addressId" cascade="all" update="true"/>
+    </class>
+</hibernate-mapping>

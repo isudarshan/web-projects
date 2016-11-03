@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+
+<body>
+<wicket:extend>
+    <div class="Calendar" wicket:id="calendarFrame">
+
+        <div class="CalendarHeader">
+            <div class="PreviousMonth">
+                <a href="#" wicket:id="previousMonthLink" wicket:message="title:cal.prev"><i class="fa fa-angle-double-left"></i></a>
+            </div>
+
+            <div class="CurrentMonth" wicket:id="currentMonth"></div>
+
+            <div class="NextMonth">
+                <a href="#" wicket:id="nextMonthLink" wicket:message="title:cal.next"><i class="fa fa-angle-double-right"></i></a>
+            </div>
+        </div>
+
+        <div class="CalendarBody">
+            <div class="CalendarWeek" wicket:id="weeks">
+                <div wicket:id="day1">[s]</div>
+                <div wicket:id="day2">[m]</div>
+                <div wicket:id="day3">[t]</div>
+                <div wicket:id="day4">[w]</div>
+                <div wicket:id="day5">[t]</div>
+                <div wicket:id="day6">[f]</div>
+                <div wicket:id="day7">[s]</div>
+                <br clear="all"/>
+            </div>
+        </div>
+    </div>
+</wicket:extend>
+</body>
+</html>

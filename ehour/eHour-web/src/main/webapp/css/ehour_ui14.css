@@ -1,0 +1,100 @@
+body {
+    color: white;
+    font: 1.3em Geneva, Arial, Helvetica, sans-serif;
+}
+
+.outer-container {
+    border-radius: 14px;
+    border: 1px solid #f8f8f8;
+    background: #f8f8f8;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10%;
+}
+
+.inner-container {
+    margin: 15px 25px 15px 25px;
+
+    padding: 10px;
+
+    border-radius: 14px;
+    border: 0 solid transparent;
+
+    background: #b1cbe5; /* Old browsers */
+    background: -moz-linear-gradient(left,  #b1cbe5 0%, #a6c0da 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#b1cbe5), color-stop(100%,#a6c0da)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #b1cbe5 0%,#a6c0da 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #b1cbe5 0%,#a6c0da 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #b1cbe5 0%,#a6c0da 100%); /* IE10+ */
+    background: linear-gradient(to right,  #b1cbe5 0%,#a6c0da 100%); /* W3C */
+}
+
+.content {
+    padding: 10px;
+    width: inherit;
+}
+
+.logo {
+    padding: 1em 0 0 0 !important;
+}
+
+.version {
+    padding-left: 2.4em;
+    margin: -1.2em 2em 0 0;
+    font-size: 1em;
+    text-align: right;
+}
+
+.login-form-container {
+    padding: 0 0 0 0.5em;
+}
+
+input {
+    height: 2em !important;
+    border: 1px solid #9abbd9 !important;
+    color: #233e55 !important;
+}
+
+input:focus {
+    border: 1px solid #7f9ab3 !important;
+}
+
+.form-input {
+    padding-left: 2px !important;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px !important;
+}
+
+.submit {
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+.submit .button {
+    background: transparent;
+    color:white;
+    border-color: #f0f0f0;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    outline: none !important;
+}
+
+.submit .button:hover {
+    background-color: #afcae5;
+    border-color: #eeeeee;
+}
+
+.error {
+    color: #ff3333;
+    padding-top: 2em;
+}
+
+.form-control {
+    padding: 0 12px !important;
+}

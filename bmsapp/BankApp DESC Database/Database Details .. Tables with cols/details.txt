@@ -1,0 +1,11 @@
+DetailsId(PK)           ------------  BigInt   
+First_Name              ------------  varchar    
+Last_Name               ------------  varchar
+Mobile                  ------------  varchar
+EmailId                 ------------  varchar
+Picture                 ------------  medBlob
+Signature               ------------  medBlob
+AccountType             ------------  varchar
+MinimumBalance          ------------  double
+AddressID
+               ------------  bigInt

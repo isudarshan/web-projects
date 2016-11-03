@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dmsapp.domain.sub.Branch" table="branch" discriminator-value="0">
+        <id column="ID" name="id" type="java.lang.Integer">
+            <generator class="native" />
+        </id>
+
+        
+        <property column="branch" name="branch" type="java.lang.String" />
+        <property column="active" name="active" type="java.lang.Integer" />
+
+    </class>
+</hibernate-mapping>

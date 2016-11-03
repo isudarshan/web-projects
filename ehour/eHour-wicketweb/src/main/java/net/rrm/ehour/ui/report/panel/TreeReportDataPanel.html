@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+      xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<body>
+
+<wicket:panel>
+    <div wicket:id="greyFrame" style="clear:both;">
+        <div class="reportContent">
+            <div wicket:id="reportHeader" class="criteriaDate"></div>
+
+            <span wicket:id="reportContent"></span>
+        </div>
+    </div>
+
+    <wicket:fragment wicket:id="linkFragment">
+        <a wicket:id="link">
+            <wicket:container wicket:id="linkLabel"></wicket:container>
+        </a>
+    </wicket:fragment>
+
+
+    <wicket:fragment wicket:id="noData">
+        <br clear="all"/>
+        <h4 style="padding-left: 2em">
+            <wicket:message key="report.noData"/>
+        </h4>
+    </wicket:fragment>
+
+    <wicket:fragment wicket:id="withDataReport">
+        <div style="width:100%;text-align: right;height:22px">
+            <a wicket:id="excelLink" class="floatRight" style="margin-right: 1.5em">
+                <i class="fa fa-file-excel-o excelLink" wicket:message="title:general.excel"></i>
+            </a>
+        </div>
+
+        <div id="reportOptions" class="filterContainer" style="margin-left: 5px;margin-bottom: 15px">
+            <div class="row" wicket:id="reportOptionsPlaceholder"></div>
+            <div class="row" wicket:id="additionalOptions"></div>
+        </div>
+
+        <div wicket:id="reportFrame">
+            <span wicket:id="reportFrameContainer">
+                <table class="dataTable" cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th wicket:id="columnHeaders"></th>
+                    </tr>
+                    </thead>
+
+                    <tfoot>
+                    <tr class="totalRow">
+                        <td wicket:id="cell" valign="top">2,140</td>
+                    </tr>
+                    </tfoot>
+
+                    <tbody>
+                    <tr class="dataRow" wicket:id="reportTable">
+                        <td wicket:id="cell" valign="top"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </span>
+        </div>
+
+        <div class="floatRight" style="text-align: right;padding-right:10px;" wicket:id="navigator">[dataview navigator]</div>
+
+        <br clear="all">
+    </wicket:fragment>
+</wicket:panel>
+
+</body>
+
+</html>

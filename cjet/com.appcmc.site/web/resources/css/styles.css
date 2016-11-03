@@ -1,0 +1,3117 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    color:#959595;
+    font:normal 12px/1.8em Arial, Helvetica, sans-serif;
+    background:#687591;
+}
+html, #body {
+    padding:0;
+    margin:0 auto;
+    width:1000px;
+}
+
+.logo {
+    float:left;
+    width:300px;
+    height:51px;
+    padding:15px;
+    margin:0 auto;
+}
+.header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar {
+    margin:0;
+    padding:0;
+}
+.menu_nav {
+    margin:0;
+    padding:0;
+    height:81px;
+    background-color: white;
+}
+.menu_nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    float:right;
+}
+.menu_nav ul li {
+    margin:0;
+    padding:25px 5px 0 0;
+    float:left;
+}
+.menu_nav ul li a {
+    display:block;
+    margin:0 5px 0 0;
+    padding:10px 15px;
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+    line-height:16px;
+    background:#cccccc;
+}
+.menu_nav ul li.active a, .menu_nav ul li a:hover {
+    text-decoration:none;
+    background:#6B9EDD;
+}
+ol, ul {
+    list-style: none;/*position: relative; ensures that IE displays first three bullets, but causes other problems */
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clear {
+    clear:both;
+    margin:0;
+    padding:0;
+}
+/* Pridikt settings
+----------------------------------------------------------------------------------------------------*/
+
+body {
+    margin: 0px;
+    font: 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #000;
+    min-width: 960px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    /*color: #900;*/
+    color: #111;
+    text-decoration: underline;
+}
+a:visited {
+    color: #000;
+}
+form {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    font-size: 20px;
+    clear: both;
+}
+h2 {
+    font-size: 16px;
+    clear: both;
+}
+h3 {
+    font-size: 13px;
+}
+img {
+    border: none;
+}
+input[type="text"] {
+    display: inline-block;
+    position: relative;
+    float: left;
+
+    height: 24px;
+    line-height: 24px;
+    margin: 0px 0px 6px 0px;
+    padding: 0px 2px;
+    border: solid 1px #8E9DB0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 20px;
+    color: #8E9DB0;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+input[type="text"]:focus {
+    box-shadow: 0 0 5px #8E9DB0;
+    -webkit-box-shadow: 0 0 5px #8E9DB0;
+    -moz-box-shadow: 0 0 5px #8E9DB0;
+    color: #000;
+}
+
+input[type="password"] {
+    display: inline-block;
+    position: relative;
+    float: left;
+
+    height: 24px;
+    line-height: 24px;
+    margin: 0px 0px 6px 0px;
+    padding: 0px 2px;
+    border: solid 1px #8E9DB0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 20px;
+    color: #8E9DB0;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+input[type="password"]:focus {
+    box-shadow: 0 0 5px #8E9DB0;
+    -webkit-box-shadow: 0 0 5px #8E9DB0;
+    -moz-box-shadow: 0 0 5px #8E9DB0;
+    color: #000;
+}
+
+
+select {
+    display: inline-block;
+    position: relative;
+    float: left;
+
+    height: 24px;
+    line-height: 24px;
+    margin: 0px 0px 6px 0px;
+    padding: 0px 2px;
+    border: solid 1px #8E9DB0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 20px;
+    color: #8E9DB0;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+select:focus {
+    box-shadow: 0 0 5px #8E9DB0;
+    -webkit-box-shadow: 0 0 5px #8E9DB0;
+    -moz-box-shadow: 0 0 5px #8E9DB0;
+    color: #000;
+}
+
+
+textarea {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 412px;
+    height: 74px;
+    line-height: 24px;
+    margin: 0px 0px 6px 0px;
+    padding: 0px 2px;
+    border: solid 1px #8E9DB0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 20px;
+    color: #8E9DB0;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+label {
+    display: inline-block;
+    position: relative;
+    float: left;
+    color: black;
+    clear: both;
+    margin: 0px 0px 6px 0px;
+    padding: 0px 10px 0px 0px;
+    line-height: 24px;
+}
+.header {
+    font-weight:bold;
+}
+.large {
+    font-size: 16px;
+}
+.small {
+    font-size: 11px;
+}
+/* Buttons and Link Modules
+----------------------------------------------------------------------------------------------------*/
+
+a.button, a.button-h {
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 24px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 6px 0px;
+    padding: 0px 10px;
+    border: solid 1px #8E9DB0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 24px;
+    color: #333;
+    background: url(../images/design/button-back.png) repeat-x left -3px;
+}
+a.button-h {
+    height: 32px;
+    line-height: 32px;
+    background: url(../images/design/button-back.png) repeat-x left -0px;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    margin-right: 4px;
+}
+a.button:hover, a.button-h:hover {
+    color: #000;
+    text-decoration: none;
+    box-shadow: 0 0 5px #8E9DB0;
+    -webkit-box-shadow: 0 0 5px #8E9DB0;
+    -moz-box-shadow: 0 0 5px #8E9DB0;
+    background: url(../images/design/button-back.png) repeat-x left -38px;
+}
+a.button-h:hover {
+    background: url(../images/design/button-back.png) repeat-x left -35px;
+}
+a.gold {
+    border: solid 1px #D2BB34;
+    color: #29250A;
+    background: url(../images/design/button-back.png) repeat-x left -73px;
+}
+a.button-h.gold {
+    height: 32px;
+    line-height: 32px;
+    background: url(../images/design/button-back.png) repeat-x left -70px;
+}
+a.gold:hover {
+    color: #000;
+    text-decoration: none;
+    box-shadow: 0 0 5px #D2BB34;
+    -webkit-box-shadow: 0 0 5px #D2BB34;
+    -moz-box-shadow: 0 0 5px #D2BB34;
+    background: url(../images/design/button-back.png) repeat-x left -108px;
+}
+a.button-h.gold:hover {
+    background: url(../images/design/button-back.png) repeat-x left -105px;
+}
+a.spot-on, a.dead-wrong, a.create, a.spot-on-disabled, a.dead-wrong-dislabled {
+    display: inline-block;
+    position: relative;
+    float:left;
+    height: 49px;
+    margin-right: 6px;
+    color: #29250A;
+    line-height: 44px;
+    font-size: 13px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #FFF;
+    text-decoration: none;
+}
+a.spot-on:hover, a.dead-wrong:hover, a.create:hover {
+    color: #000;
+    text-decoration: none;/*box-shadow: 0 0 5px #D2BB34;
+-webkit-box-shadow: 0 0 5px #D2BB34; 
+-moz-box-shadow: 0 0 5px #D2BB34;*/
+}
+a.spot-on {
+    width: 140px;
+    background: url(../images/design/buttons-gold.png) no-repeat left top;
+    margin-right: 2px;
+}
+a.spot-on:hover {
+    background: url(../images/design/buttons-gold.png) no-repeat left -50px;
+}
+a.spot-on span {
+    display: block;
+    height: 50px;
+    width: 114px;
+    margin-right: 12px;
+    margin-left: 8px;
+    background: url(../images/design/thumbs.png) no-repeat right 10px;
+    line-height: 42px;
+}
+a.spot-on span.count {
+    display: block;
+    height: 10px;
+    width: 104px;
+    font-size:9px;
+    line-height: 10px;
+    position: relative;
+    top: -11px;
+}
+a.spot-on-disabled {
+    width: 140px;
+    background: url(../images/design/buttons-gold-disabled.png) no-repeat left top;
+    margin-right: 2px;
+}
+a.spot-on-disabled span {
+    display: block;
+    height: 50px;
+    width: 114px;
+    margin-right: 12px;
+    margin-left: 8px;
+    line-height: 27px;
+}
+a.spot-on-disabled span.count {
+    display: block;
+    height: 10px;
+    width: 104px;
+    font-size:9px;
+    line-height: 10px;
+    position: relative;
+    top: -5px;
+}
+a.dead-wrong {
+    width: 140px;
+    background: url(../images/design/buttons-gold.png) no-repeat right top;
+}
+a.dead-wrong:hover {
+    background: url(../images/design/buttons-gold.png) no-repeat right -50px;
+}
+a.dead-wrong span {
+    display: block;
+    height: 50px;
+    width: 123px;
+    margin-right: 0px;
+    margin-left: 11px;
+    background: url(../images/design/thumbs.png) no-repeat left -45px;
+}
+a.dead-wrong span.count {
+    display: block;
+    height: 10px;
+    width: 104px;
+    font-size:9px;
+    line-height: 10px;
+    text-align:left;
+    margin-left: 23px;
+    position: relative;
+    top: -13px;
+}
+a.dead-wrong-dislabled {
+    width: 140px;
+    background: url(../images/design/buttons-gold-disabled.png) no-repeat right top;
+}
+a.dead-wrong-dislabled span {
+    display: block;
+    height: 50px;
+    width: 114px;
+    margin-left: 27px;
+    line-height: 27px;
+    color: #b3b0a9;
+}
+a.dead-wrong-dislabled span.count {
+    display: block;
+    height: 10px;
+    width: 104px;
+    font-size:9px;
+    line-height: 5px;
+    top: -5px;
+    margin-left: 19px;
+    text-align: left;
+}
+a.button-sq, a.button-dw {
+    background:url("../images/design/btn-sq.gif") repeat-x scroll left 0 #d0d7dd;
+    height:32px;
+    font-size: 12px;
+    border:1px solid #bec2c5;
+    color:#333333;
+    display:inline-block;
+    float:left;
+    margin:0 10px 6px 0;
+    padding:0 10px;
+    position:relative;
+    text-align:center;
+    text-decoration:none;
+    line-height: 30px;
+}
+a.button-sq span {
+    background:url("../images/design/thumbs.png") no-repeat scroll left 2px transparent;
+    display:block;
+    padding-left:20px;
+    width:68px;
+    height: 30px;
+    font-weight:bold;
+}
+a.button-dw span {
+    background:url("../images/design/thumbs.png") no-repeat scroll left -52px transparent;
+    display:block;
+    padding-left:20px;
+    width:85px;
+    height: 30px;
+    font-weight:bold;
+}
+a.create {
+    width: 277px;
+    background: url(../images/design/buttons-gold.png) no-repeat left -104px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+a.create:hover {
+    background: url(../images/design/buttons-gold.png) no-repeat left -154px;
+}
+a.create span {
+    display: inline-block;
+    height: 42px;
+    padding-right: 28px;
+    margin-right: 12px;
+    margin-left: 8px;
+    background: url(../images/design/thumbs.png) no-repeat right 6px;
+}
+ul.options {
+    display: block;
+    position: relative;
+    float: left;
+}
+ul.options li {
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+ul.options li a {
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    font-size: 13px;
+    padding-left: 20px;
+    color: #000;
+    text-decoration: none;
+}
+ul.options li a:hover {
+    text-decoration: underline;
+}
+/* Layout Elements
+----------------------------------------------------------------------------------------------------*/
+
+.wrapper {
+    /*position: relative;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+.col {
+    display: inline;
+    float: left;
+    /*position: relative;*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#mask {
+    z-index: 10000;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: #FFF;
+    /* for IE */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.6;
+    display: none;
+}
+/* Header
+----------------------------------------------------------------------------------------------------*/
+
+#header {
+    height: 48px;
+    background: url(../images/design/header-back.jpg) repeat-x;
+}
+#logo {
+    float: left;
+    position: relative;
+    margin: 6px 20px 0px 10px;
+    width: 112px;
+    height: 34px;
+}
+#search {
+    float: left;
+    position: relative;
+    margin: 12px 20px 0px 20px;
+    padding: 0px;
+    height: 24px;
+    width: 448px;
+}
+#searchfield {
+    height: 20px;
+    width: 420px;
+    margin: 0px;
+    padding: 0px 24px 0px 2px;
+    background: #666 url(../images/design/search-button.png) no-repeat right top;
+    border: solid 1px #999;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 20px;
+    position: absolute;
+    color: #999;
+    outline:none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+#searchfield:focus {
+    box-shadow: 0 0 5px #EFF2F4;
+    -webkit-box-shadow: 0 0 5px #EFF2F4;
+    -moz-box-shadow: 0 0 5px #EFF2F4;
+    background: #EFF2F4 url(../images/design/search-button.png) no-repeat right -22px;
+    color: #000;
+}
+#search input:focus, #search input.ieFocusHack {
+    box-shadow: 0 0 5px #EFF2F4;
+    -webkit-box-shadow: 0 0 5px #EFF2F4;
+    -moz-box-shadow: 0 0 5px #EFF2F4;
+    background: #EFF2F4 url(../images/design/search-button.png) no-repeat right -22px;
+    color: #000;
+}
+#searchbutton {
+    display: block;
+    height: 22px;
+    width: 22px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    background: none;
+    border: none;
+    top: 1px;
+    right: 1px;
+}
+#nav {
+    float: left;
+    position: relative;
+    margin: 11px 10px 0px 20px;
+    height: 24px;
+    width: 300px;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+}
+#nav a {
+    float: left;
+    display: block;
+    height: 24px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0.1em 0.1em 0.2em #000;
+}
+#nav a:hover {
+    text-shadow: 0.1em 0.1em 0.2em #999;
+}
+#nav a.inbox span {
+    width: 26px;
+    height: 24px;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align:top;
+    background: url(../images/design/counter-back.png) no-repeat top left;
+    display: inline-block;
+}
+#nav a.inbox {
+    *.margin-top:3px;
+}
+#nav .profilewrapper {
+    position: absolute;
+    top: 0px;
+    left: 172px;
+    background: url(../images/design/arrow-white.png) no-repeat right 8px;
+}
+#profilemenu a{ border: solid 1px #464646; width: 110px; margin-right:0;}
+#profilemenu a:hover{ background-color:#353535; width: 110px; border: solid 1px; border-left-color:#2b2b2b; border-top-color:#2b2b2b; border-bottom-color:#4f4f4f; border-right-color:#4f4f4f; }
+#nav .profile {
+    background: url(../images/design/header-user.png) no-repeat top left;
+    white-space: nowrap;
+    margin: 0px 0px 5px 0px;
+    cursor: pointer;
+    cursor: hand;
+}
+#nav .profile:hover {
+    text-shadow: 0.1em 0.1em 0.2em #999;
+}
+#nav .profilethumb {
+    margin: 2px;
+    position: absolute;
+}
+#nav .profile span {
+    display: inline-block;
+    margin-left: 27px;
+    padding-right: 22px;
+    white-space: nowrap;
+}
+#nav #profilemenu {
+    z-index: 1000;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 100%;
+    background: #444;
+    padding: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: 3px 3px 3px #ccc;
+    -moz-box-shadow: 3px 3px 3px #ccc;
+    -webkit-box-shadow: 3px 3px 3px #ccc;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #CCC;
+}
+#nav #profilemenu .profilemenuwrapper {
+    background: url(../images/design/arrow-white.png) no-repeat right -46px;
+}
+/* Body
+----------------------------------------------------------------------------------------------------*/
+
+#body {
+    clear: both;
+    min-height: 670px;
+    background-color: white;
+}
+#body1 {
+    width: 600px;
+    margin: 10px 20px 10px 10px;
+    float: left;
+
+}
+#body2 {
+    width: 320px;
+    margin: 10px 10px 10px 0px;
+    float: left;
+}
+/* 1st columnModules 600px wide
+----------------------------------------------------------------------------------------------------*/
+
+.m600-head100 {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 100px;
+    background: url(../images/design/col1head2.png) no-repeat center 0;
+}
+.heading-review {
+    position: relative;
+    float: left;
+    width: 600px;
+    min-height: 58px;
+    background: url(../images/design/col1head3.png) no-repeat center 0;
+    margin-bottom: 10px;
+}
+.m600-v-head {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 24px;
+    line-height: 22px;
+    border-bottom: solid 1px #B6C1CC;
+    margin: 0px 0px 10px 0px;
+    *.z-index: -1;
+}
+.m600-v-head .v-title {
+    position: relative;
+    float: left;
+    height: 24px;
+    padding-right: 18px;
+    background: url(../images/design/arrow-black.png) no-repeat right 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.m600-v-head .v-sort {
+    position: relative;
+    float: right;
+    text-align: right;
+    height: 22px;
+    padding-top: 2px;
+    padding-right: 18px;
+    background: url(../images/design/arrow-black.png) no-repeat right 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.m600-prdkt {
+    position: relative;
+    float: left;
+    width: 600px;
+    margin-bottom: 10px;
+    *.z-index: -100;
+}
+.m600-prdkt .prdktr {
+    position: relative;
+    float: left;
+    width: 80px;
+    /*margin-right: 10px;*/
+    font-size: 11px;
+}
+.m600-prdkt .prdktr img {
+    padding: 5px;
+    border: solid 1px #999;
+    box-shadow: 2px 2px 3px #999;
+    -moz-box-shadow: 2px 2px 3px #999;
+    -webkit-box-shadow: 2px 2px 3px #999;
+}
+.m600-prdkt .prdktr .name {
+    font-weight: bold;
+}
+.m600-prdkt .prdktr .name a:link, .m600-prdkt .prdktr .name a:visited {
+    text-decoration: none;
+}
+.m600-prdkt .prdktr .rank {
+}
+.m600-prdkt .prdkt-box {
+    position: relative;
+    float: right;
+    width: 421px;
+    /*margin-left: 10px;*/
+    padding: 5px 70px 5px 7px;
+    border: solid 1px #8E9DB0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    background: url(../images/design/module-back.png) repeat-x left bottom;
+}
+.m600-prdkt .prdkt-box .tags {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+.m600-prdkt .prdkt-box .pridiktion {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0px 0px 7px 0px;
+    padding: 0px;
+}
+.m600-prdkt .prdkt-box .details {
+    font-size: 11px;
+}
+.m600-prdkt .prdkt-box .link {
+    font-size: 11px;
+}
+.m600-prdkt .prdkt-box .link img {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    max-height: 90px;
+    max-width: 90px;
+}
+.m600-prdkt .prdkt-box .link div {
+    display: table-cell;
+    line-height: 110%;
+}
+.m600-prdkt .prdkt-box .link h3 {
+    font-size: 13px;
+}
+.m600-prdkt .prdkt-box .link h3, .m600-prdkt .prdkt-box .link a, .m600-prdkt .prdkt-box .link p {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.m600-prdkt .prdkt-box .photo {
+    font-size: 11px;
+}
+.m600-prdkt .prdkt-box .video {
+    font-size: 11px;
+}
+.m600-prdkt .prdkt-box .actions {
+    clear: both;
+    margin: 7px 0px;
+    height: 42px;
+    line-height: 36px;
+    font-size: 13px;
+    text-align: center;
+}
+.m600-prdkt .prdkt-box .info {
+    /*position: relative;*/
+    clear: both;
+    height: 16px;
+    width: 490px;
+    line-height: 16px;
+    font-size: 11px;
+    color: #8E9DB0;
+}
+.m600-prdkt .prdkt-box .info li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 16px;
+    margin-right: 18px;
+    padding-left: 14px;
+}
+.m600-prdkt .prdkt-box .info li.timestamp {
+    /*background: url(../images/email-icon.gif) no-repeat left top;*/
+}
+.m600-prdkt .prdkt-box .info li.location {
+    background: url(../images/mobile.gif) no-repeat ;
+}
+.m600-prdkt .prdkt-box .info li.end {
+    background: url(../images/design/icons.png) no-repeat left -40px;
+}
+.m600-prdkt .prdkt-box .boxpointer {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 39px;
+    width: 20px;
+    background: url(../images/design/box-arrow.gif) no-repeat left top;
+}
+.m600-prdkt .prdkt-box .participants {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    height: 40px;
+    width: 60px;
+    background: url(../images/design/participants.png) no-repeat left top;
+    color: #8E9DB0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+/* Pridikt Form
+----------------------------------------------------------------------------------------------------*/
+
+#prdkt-compose.hide, #prdkt-compose.edit, #prdkt-report-head {
+    position: absolute;
+    z-index: 10001;
+    width: 620px;
+    /*top: 10px;*/
+    left: 0px;
+}
+#prdkt-compose.edit {
+    background: #EFEFEF url(../images/design/col1head.png) no-repeat center -20px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: 3px 3px 3px #999;
+    -moz-box-shadow: 3px 3px 3px #999;
+    -webkit-box-shadow: 3px 3px 3px #999;
+    padding-bottom: 10px;
+}
+#prdkt-report-head {
+    background: #EFEFEF url(../images/design/col1head4.png) no-repeat center 1px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: 3px 3px 3px #999;
+    -moz-box-shadow: 3px 3px 3px #999;
+    -webkit-box-shadow: 3px 3px 3px #999;
+    padding-bottom: 10px;
+    min-height: 280px;
+}
+#prdkt-compose .close, #prdkt-report-head .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/design/icons.png) no-repeat left -120px;
+    cursor: pointer;
+    cursor: hand;
+}
+#prdkt-compose a {
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+#prdkt-compose a:hover {
+}
+#prdkt-compose form, .m600-head100 form, .heading-review form, #prdkt-report-head form {
+    margin: 10px 20px;
+}
+#prdkt-compose form label, #prdkt-report-head form label {
+    min-width: 143px;
+}
+#prdkt-compose form label.title, .m600-head100 form label.title, .heading-review form label.title, #prdkt-report-head form label.title {
+    display: block;
+    margin-bottom: 6px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 16px;
+}
+#prdkt-compose form input.title, #prdkt-report-head form input.title {
+    display: block;
+    width: 574px;
+    margin: 0px 0px 6px 0px;
+}
+.m600-head100 form input.title {
+    display: block;
+    width: 554px;
+    margin: 0px 0px 6px 0px;
+}
+#prdkt-compose form input.title:focus, #prdkt-report-head form input.title:focus {
+    box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    -moz-box-shadow: 0 0 5px #999;
+}
+#compose-basic, #compose-advanced, #compose-advanced2, #compose-buttons {
+    position: relative;
+    float: left;
+    width: 580px;
+    display: none;
+}
+#compose-advanced {
+    display: none;
+    border-top: solid 1px #8E9DB0;
+    padding: 10px 0px 0px 0px;
+}
+#compose-advanced2 {
+    display: none;
+    border-top: solid 1px #8E9DB0;
+    padding: 10px 0px 0px 0px;
+}
+#compose-buttons {
+    /*border-top: solid 1px #8E9DB0;*/
+    padding: 10px 0px 0px 0px;
+}
+#compose-basic div, #compose-advanced div, #compose-advanced2 div, #compose-buttons div {
+    position: relative;
+    float: left;/*width: 580px;
+    */}
+#compose-advanced .close {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 9px;
+    height: 9px;
+    background: url(../images/design/icons.png) no-repeat left -140px;
+    cursor: pointer;
+    cursor: hand;
+}
+#expand-advanced a {
+    font-size: 13px;
+    color:#000;
+    text-decoration:none;
+}
+.topic-tags {
+    float: left;
+    background: #fff;
+    min-width: 50px;
+    height: 20px;
+    margin: 0px 8px 6px 0px;
+    padding: 2px 4px;
+    border: solid 1px #8E9DB0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+#prdkt-compose .header {
+    width: 80%;
+    margin-bottom: 10px;
+}
+#compose-options {
+    position: relative;
+    float: left;
+    height: 16px;
+    margin-bottom: 36px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 13px;
+    line-height: 16px;
+}
+#compose-options a {
+    color: #FFF !important;
+}
+#prdkt-compose .add-details {
+    background: url(../images/design/icons.png) no-repeat left -60px;
+}
+#prdkt-compose .set-end-date {
+    background: url(../images/design/icons.png) no-repeat left -40px;
+}
+#prdkt-compose .mark-as-adult-content {
+    background: url(../images/design/icons.png) no-repeat left -80px;
+}
+#prdkt-compose .hide-user-name {
+    background: url(../images/design/icons.png) no-repeat left -100px;
+}
+#prdkt-compose .prdkt-compose-details {
+    font-size: 13px;
+    line-height: 16px;
+}
+#prdkt-compose .facebook, #prdkt-compose .facebook-checked, #prdkt-compose .twitter, #prdkt-compose .twitter-checked, #prdkt-report-head .facebook, #prdkt-report-head .facebook-checked, #prdkt-report-head .twitter, #prdkt-report-head .twitter-checked, .st-blocked2 .facebook, .st-blocked2 .facebook-checked, .st-blocked2 .twitter, .st-blocked2 .twitter-checked {
+    display: inline-block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px;
+    margin: 0px 10px 10px 0px;
+    cursor: pointer;
+    cursor: hand;
+    background: url(../images/design/icons-social-checkbox.png) no-repeat;
+}
+#prdkt-compose .facebook, #prdkt-report-head .facebook, .st-blocked2 .facebook {
+    background-position: left -40px;
+}
+#prdkt-compose .facebook-checked, #prdkt-report-head .facebook-checked, .st-blocked2 .facebook-checked {
+    background-position: left 0px;
+}
+#prdkt-compose .twitter, #prdkt-report-head .twitter, .st-blocked2 .twitter {
+    background-position: left -120px;
+}
+#prdkt-compose .twitter-checked, #prdkt-report-head .twitter-checked, .st-blocked2 .twitter-checked {
+    background-position: left -80px;
+}
+#prdkt-compose .photo, .m600-prdkt .photo {
+    background: url(../images/design/icons.png) no-repeat left -160px;
+}
+#prdkt-compose .link, .m600-prdkt .link {
+    background: url(../images/design/icons.png) no-repeat left -180px;
+}
+#prdkt-compose .video, .m600-prdkt .video {
+    background: url(../images/design/icons.png) no-repeat left -200px;
+}
+#prdkt-compose .comments, .m600-prdkt .comments {
+    background: url(../images/design/icons.png) no-repeat left -60px;
+}
+.cal-icon {
+    background: url(../images/design/icons.png) no-repeat left -40px;
+    display:inline-block;
+    height:16px;
+    width:20px;
+    margin-left: 5px;
+}
+.close-icon {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    display:inline-block;
+    margin:3px 2px 0 4px;
+    background: url(../images/design/close.png) no-repeat;
+}
+#right-cont-area {
+    display:block;
+    clear:both;
+    width:300px;
+    padding-left:20px;
+    z-index:-8;
+}
+#right-cont-area .prdktr {
+    position: relative;
+    float: left;
+    width: 80px;
+    font-size: 11px;
+}
+#right-cont-area .prdktr img {
+    padding: 5px;
+    border: solid 1px #999;
+    box-shadow: 2px 2px 3px #999;
+    -moz-box-shadow: 2px 2px 3px #999;
+    -webkit-box-shadow: 2px 2px 3px #999;
+}
+#right-cont-area .name {
+    font-weight: bold;
+    font-size:14px;
+    color:#282828;
+    padding-top: 10px;
+    float:left;
+    width:220px;
+    z-index:-5;
+}
+#right-cont-area .details {
+    font-size:11px;
+    color:#282828;
+    padding-bottom:10px;
+    float:left;
+    width:220px;
+    z-index:-5;
+}
+#pridikt-level {
+    display:block;
+    height:10px;
+    border: solid 1px #b9c1c4;
+    background: url(../images/design/pridkti-lev-blu.gif) repeat-x;
+    clear:both;
+}
+#pridikt-level .red {
+    display:block;
+    float:right;
+    width:20%;
+    height:10px;
+    background: url(../images/design/pridkti-lev-red.gif) repeat-x;
+}
+.level-stage {
+    display:block;
+    width:60px;
+    float:left;
+    font-size:11px;
+    padding: 3px 0 13px;
+}
+.right-nav {
+}
+.right-nav ul {
+}
+.right-nav ul li {
+    height:32px;
+}
+.right-nav ul li:hover {
+    background: url(../images/design/right-nav-bg.gif) no-repeat;
+    text-decoration:none;
+    color:#fff;
+}
+.right-nav ul li.current {
+    background: url(../images/design/right-nav-bg.gif) no-repeat;
+    text-decoration:none;
+    color:#fff;
+    height:32px;
+}
+.right-nav ul li.current a:link {
+    color: #fff;
+}
+.right-nav ul li.current a, .right-nav ul li.current a:visited {
+    color:#fff;
+}
+.right-nav ul li a:link, .right-nav ul li a:visited {
+    width:300px;
+    height: 25px;
+    display:block;
+    vertical-align:middle;
+    border-bottom: solid 1px #c0c1c5;
+    padding-top: 7px;
+    font-weight:bold;
+    text-decoration:none;
+    margin-left:16px;
+    color:#000;
+}
+.right-nav ul li a:hover {
+    width:300px;
+    color:#fff;
+    text-decoration:none;
+    margin-left:16px;
+}
+.right-nav ul li a:active {
+}
+/* Footer ----------------------------------------------------------------------------------------------------*/
+#footer {
+    clear: both;
+    padding-top: 20px;
+    height: 80px;
+    background: #6B9EDD;
+    color: black;
+    font-size: 12px;
+}
+#footer .linkgroup {
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+}
+#footer1, #footer2, #footer3, #footer4 {
+    width: 300px;
+    float: left;
+}
+#footer1 ul, #footer2 ul {
+    margin-left: 13px;
+}
+#footer1 ul li, #footer2 ul li {
+    list-style-type:disc;
+    color:#fff;
+}
+#footer a {
+    display: block;
+    height: 15px;
+    line-height: 15px;
+    color: #FFF;
+    text-decoration: none;
+}
+#footer a:hover {
+    color: #CCC;
+}
+/* tips css starts ----------------- */
+.tipsy-inner {
+    padding:10px 15px;
+    line-height:1.5em;
+    font-weight:bold;
+}
+.tipsy {
+    /*opacity:.8;
+    filter:alpha(opacity=80);*/
+    background-repeat:no-repeat;
+    padding:5px;
+}
+.tipsy-inner {
+    padding:8px 8px;
+    max-width:200px;
+    font:11px 'Lucida Grande', sans-serif;
+    font-weight:bold;
+    -moz-border-radius:4px;
+    -khtml-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    box-shadow: 3px 3px 3px #999;
+    -moz-box-shadow: 3px 3px 3px #999;
+    -webkit-box-shadow: 3px 3px 3px #999;
+    background-color:#f3f3f3;
+    color:3c3c3c;
+    text-align:left;
+    border: solid 1px #8b8f90;
+    padding: 17px;
+}
+.tipsy-north {
+    .m600-prdkt .prdktr .name./images/tipsy-north.gif);
+    background-position:top center;
+}
+.tipsy-south {
+    background-image:url(../images/tipsy-south.gif);
+    background-position:bottom center;
+}
+.tipsy-east {
+    background-image:url(../images/tipsy-east.gif);
+    background-position:right center;
+}
+.tipsy-west {
+    background-image:url(../images/tipsy-west.gif);
+    background-position:left center;
+}
+/* tips css ends ----------------- */
+
+/* popup css starts ----------------- */
+#popupContact body {
+    background:#fff none repeat scroll 0%;
+    line-height:1;
+    font-size: 12px;
+    margin:0pt;
+    height:100%;
+}
+#backgroundPopup {
+    display:none;
+    position:fixed;
+    _position:absolute; /* hack for internet explorer 6*/
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background:#fff;
+    z-index:1 !important;
+}
+#popupContact {
+    display:none;
+    position:fixed;
+    _position:absolute; /* hack for internet explorer 6*/
+    min-height:300px;
+    width:620px;
+    z-index:2 !important;/*background-color:#fff;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;*/
+}
+#popupContactClose {
+    line-height:14px;
+    right:6px;
+    top:4px;
+    position:absolute;
+    display:block;
+    color:#FFFFFF;
+}
+#personal {
+    padding:5px;
+    font-weight:bold;
+    font-size:12px;
+}
+/* popup css ends ----------------- */
+
+/*------ JQuery tabs css starts --------*/
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 31px; /*--Set height of tabs--*/
+    border-bottom: 1px solid #CCCCCC;
+    width: 100%;
+}
+ul.tabs li {
+    outline: none;
+    position: relative;
+    float: left;
+    text-align:center;
+    font: bold 12px Sans-serif;
+    list-style: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    cursor: pointer;
+    height: 22px;
+    margin-right: -3px;
+    line-height: 26px;
+    padding:8px 3px 0 10px;
+}
+ul.tabs li a {
+    text-decoration: none;
+    font-size: 12px;
+    outline: none;
+    padding:0 12px 0 21px;
+}
+ul.tabs li a:hover {
+}
+html ul.tabs li.active { /*--Makes sure that the active tab does not listen to the hover properties--*/
+    background: #fafafa;
+    border-bottom: 2px solid #fafafa; /*--Makes the active tab look like it's connected with its content--*/
+    border-top: solid 1px #CCC;
+    border-left: solid 1px #CCC;
+    border-right: solid 1px #CCC;
+    -moz-border-radius: 6px 6px 0px 0px;
+}
+html ul.tabs li.active a {
+    color:#000 !important;
+}
+.tab_container {
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #fafafa;
+    border-radius: 0 5px 5px 5px;
+    -moz-border-radius: 0 5px 5px 5px;
+}
+.tab_content {
+    padding: 5px 12px;
+    clear:both;
+    min-height:90px;
+}
+.tab_content .input {
+    border:1px solid #b8ced7;
+    padding:5px;
+    width:263px;
+    font-size:14px;
+}
+ul.tabs2 {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 31px; /*--Set height of tabs--*/
+    border-bottom: 3px solid #6B9EDD;
+    width: 100%;
+}
+ul.tabs2 li {
+    outline: none;
+    position: relative;
+    float: left;
+    text-align:center;
+    font: bold 12px Sans-serif;
+    list-style: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    cursor: pointer;
+    height: 22px;
+    margin-right: 2px;
+    line-height: 26px;
+    padding:8px 3px 0 3px;
+    background: #fafafa url(../images/tabs-bg.gif) repeat-x;
+    border-top: solid 1px #CCC;
+    border-left: solid 1px #CCC;
+    border-right: solid 1px #CCC;
+    -moz-border-radius: 6px 6px 0px 0px;
+}
+ul.tabs2 li a {
+    text-decoration: none;
+    font-size: 12px;
+    outline: none;
+    padding:0 11px;
+}
+ul.tabs2 li a:hover {
+    text-decoration: none;
+}
+html ul.tabs2 li.active { /*--Makes sure that the active tab does not listen to the hover properties--*/
+    background: #6B9EDD;
+    border-bottom: 1px solid #6B9EDD; /*--Makes the active tab look like it's connected with its content--*/
+    border-top: solid 1px #CCC;
+    border-left: solid 1px #CCC;
+    border-right: solid 1px #CCC;
+    -moz-border-radius: 6px 6px 0px 0px;
+}
+html ul.tabs2 li.active a {
+    color:#fff !important;
+    text-shadow: 1px 1px 1px #000000;
+}
+.tab_container2 {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.tab_content2 {
+    clear:both;
+    height:auto;
+}
+/*------ JQuery tabs css ends  --------*/
+#related-predik-area {
+    display:block;
+    clear:both;
+    width:300px;
+    padding-left:20px;
+}
+#related-predik-head {
+    border-bottom:1px solid #C0C1C5;
+    display: block;
+    font-size: 16px;
+    padding:15px 0 8px 0;
+}
+.related-predik-cont {
+    border-bottom:1px solid #C0C1C5;
+    display:block;
+    padding:5px 0;
+    min-height:50px;
+}
+.related-predik-cont .prdktr {
+    float:left;
+    position:relative;
+    width:25px;
+}
+.related-predik-cont .prdktr img {
+    box-shadow: 2px 2px 3px #999;
+    -moz-box-shadow: 2px 2px 3px #999;
+    -webkit-box-shadow: 2px 2px 3px #999;
+    border:1px solid #999999;
+    padding:1px;
+}
+.related-predik-cont .prdkt-box {
+    float:right;
+    padding:5px 5px 0;
+    position:relative;
+    width:265px;
+}
+.related-predik-cont .prdkt-box .tags {
+    font-size:10px;
+    margin:0;
+    padding:0;
+}
+.related-predik-cont .prdkt-box .pridiktion {
+    font-size:13px;
+    font-weight:bold;
+    line-height:18px;
+    margin:0 0 7px;
+    padding:0;
+}
+.prediction-count {
+    display: block;
+    width: 123px;
+    height:40px;
+    background: url(../images/design/pridikt-count-bg.gif) no-repeat;
+    float:left;
+    padding: 0 0 0 7px;
+    margin-right:10px;
+    text-align: left;
+}
+.prediction-count .top-txt {
+    font-size: 9px;
+    display:block;
+    text-align: left;
+    height:14px;
+    line-height:13px;
+    font-weight:bold;
+}
+.prediction-count .bot-txt {
+    font-size: 14px;
+    display:inline-block;
+    line-height:19px;
+    text-align: left;
+    width:81px;
+    float:left;
+}
+.prediction-count .spot-green {
+    font-size: 17px;
+    display:block;
+    line-height:17px;
+    text-align: right;
+    color: #629919;
+    width:35px;
+    display: inline-block;
+    padding-right: 7px;
+    font-weight: bold;
+    float:left;
+    padding-top:4px;
+}
+.prediction-count .spot-red {
+    font-size: 17px;
+    display:block;
+    line-height:23px;
+    text-align: right;
+    color: #8f0000;
+    width:35px;
+    display: inline-block;
+    padding-right: 7px;
+    font-weight: bold;
+    float:left;
+}
+.closing-predikt {
+    display: block;
+    padding-left: 100px;
+    border-bottom: solid 1px #bfc0c2;
+}
+.closing-predikt ul.tabs, .closing-predikt .tab_container {
+    width: 500px;
+}
+.closing-predikt label {
+    float: none;
+}
+.recent-drop-content {
+    background:#f3f3f3;
+}
+.recentpop {
+    min-width:110px;
+    *.width:127px;
+    position:absolute;
+    right:-18px;
+    line-height:24px;
+    z-index: 100;
+    *.z-index: 1000;
+    border: solid 1px #8c8c8c;
+    box-shadow: 3px 3px 3px #999;
+    -moz-box-shadow: 3px 3px 3px #999;
+    -webkit-box-shadow: 3px 3px 3px #999;
+}
+.drop-menu-item-recent ul {
+    margin:0px;
+    padding:0px;
+}
+.drop-menu-item ul li {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    height:24px;
+    text-align:left;
+}
+.drop-menu-item-recent ul li {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    border-bottom: solid 1px #aeaeae;
+}
+.drop-menu-item-recent ul li a:link, .drop-menu-item-recent ul li a:visited {
+    color:#000;
+    padding:3px 10px;
+    display:block;
+    line-height:18px;
+    text-decoration: none;
+    text-align: left;
+}
+.drop-menu-item-recent ul li:hover {
+    color:#000;
+    text-decoration: underline;
+}
+#shareit-box {
+    position:absolute;
+    display:none;
+    z-index:100;
+}
+#shareit-body {
+    width:308px;
+    height:126px;
+    background:url(../images/shareit.png);
+}
+#shareit-blank {
+    height:20px;
+}
+#shareit-url {
+    height:50px;
+    text-align:center;
+}
+#shareit-icon {
+    width: 274px;
+    height:20px;
+    margin-left: 15px;
+    padding-bottom: 14px;
+    border-bottom: solid 1px #b6c1cc;
+}
+.st-blocked {
+    min-width:580px;
+    display:block;
+    padding-top: 4px;
+}
+.st-blocked2 {
+    min-width:580px;
+    display:block;
+    padding:15px 0 0 0;
+    min-height:25px;
+}
+.st-blocked2 label {
+    min-width:150px;
+    display:block;
+}
+.heading-review .prdktr {
+    float:left;
+    font-size:11px;
+    position:relative;
+    width:80px;
+    margin: 10px 0 0 10px;
+}
+.heading-review .prdktr img {
+    -moz-box-shadow:2px 2px 3px #999;
+    border:1px solid #999;
+    padding:5px;
+    background: #fff;
+}
+.heading-review .name {
+    display: block;
+    width: 400px;
+    float:left;
+    margin-top: 25px;
+}
+.follow-member {
+    background-image: url(../images/follow-mem-bg.png);
+    background-repeat: no-repeat;
+    float: right;
+    height: 20px;
+    width: 89px;
+    font-size: 12px;
+    color: #313234;
+    padding-left: 19px;
+    line-height: 19px;
+    *.margin-right: 10px;
+}
+#view-pub-pro {
+    float: right;
+    height: 20px;
+    width: 189px;
+    font-size: 12px;
+    color: #fff;
+    padding-right: 10px;
+    text-align: right;
+    padding-top: 5px;
+}
+#view-pub-pro a:link, #view-pub-pro a:visited {
+    color:#fff;
+    text-decoration: underline;
+}
+.pub-members {
+    border-bottom:1px solid #C0C1C5;
+    display:block;
+    min-height:19px;
+    padding:5px 0;
+}
+.pub-members .prdktr {
+    float:left;
+    position:relative;
+    width:40px;
+}
+.pub-members .prdktr img {
+    box-shadow: 2px 2px 3px #999;
+    -moz-box-shadow: 2px 2px 3px #999;
+    -webkit-box-shadow: 2px 2px 3px #999;
+
+    /*border:1px solid #999;
+    padding:1px;*/
+}
+.pub-members .prdkt-box {
+    float:left;
+    padding:0 5px 0 10px;
+    position:relative;
+    width:543px;
+    border: none;
+}
+.pub-members .pridiktion {
+    font-size:13px;
+    line-height:18px;
+    margin:0 0 5px;
+    padding:0;
+}
+.pub-members .duration {
+    font-size:11px;
+    color: #919297;
+    line-height: 6px;
+}
+
+.signDiv{
+
+    min-width:400px;
+    display:block;
+    padding:15px 0 0 0;
+    min-height:25px;
+}
+
+.signDiv label {
+    min-width:150px;
+    display:block;
+}
+
+.userMsgBoard{
+
+    position: relative;
+    top:-157px;
+    left: 295px;
+    float: left;
+    width: 300px;
+    margin-bottom: 10px;
+    *.z-index: -100;
+
+}
+
+.profilePer{
+    position: relative;
+
+    /*float: right;*/
+    top:12px;
+    width: 200px;
+    height: 100px;
+    color: black;
+    /*margin-left: 10px;*/
+    padding: 5px 70px 5px 7px;
+    border: solid 1px #8E9DB0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    background: url(../images/design/module-back.png) repeat-x left bottom;
+
+}
+
+.editLink{
+
+    /*background-image: url(../images/follow-mem-bg.png);
+   background-repeat: no-repeat;*/
+    float: right;
+    height: 20px;
+    width: 89px;
+    font-size: 12px;
+    color: #313234;
+    padding-left: 19px;
+    line-height: 19px;
+    *.margin-right: 10px;
+}
+
+.profileuser{
+    position:relative;
+    height:70px;
+    width:260px;
+    border-bottom:  1px solid #d0d7dd;
+}
+
+.updateuser{
+    position:absolute;
+    top:77px;
+    left:153px;
+
+}
+
+#forgotPassDiv{
+    position:relative;
+    top:70px;
+    height:auto;
+    left:455px;
+    width: 500px;
+}
+
+
+/*CSS for allEnrolls.jsp, dailyReport.jsp, weeklyReport.jsp, monthlyReport.jsp*/
+#exportPdfDiv{
+    position: relative;
+    top: -30px;
+    left: 500px;
+    width:102px;
+    height: 34px;
+    margin-right: 8px;
+    font-size: 75.5%;
+}
+
+#imgDiv{
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    width: 100px;
+    height: 70px;
+}
+
+
+/*CSS for enrlHome.jsp*/
+#ajax_loading {
+    position: absolute;
+    top:245px;
+    left:30px;
+    width:100px;
+    display: none;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+#ajax_loading_email {
+    position: relative;
+    float:Left;
+    display: none;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+#emailResponse{
+    position: relative;
+    float: left;
+    width:208px;
+    height: 35px;
+    font-size: 9pt;
+    font-weight: bold;
+    display: none;
+    background-color: #6B9EDD;
+}
+
+.emailResponse{
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    width: 175px;
+    color: #FFFFFF;
+}
+
+#emailEnrlFailureResponse{
+    position: relative;
+    float: left;
+    width:300px;
+    height: 35px;
+    font-size: 9pt;
+    font-weight: bold;
+    display: none;
+    background-color: #fffff;
+}
+
+.emailEnrlFailureResponse{
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    width: 250px;
+    color: red;
+}
+
+
+
+
+/*CSS for masterHome.jsp*/
+#changePasswordAdminDiv{
+    display: none;
+}
+
+#changePasswordResponse{
+    position: absolute;
+    top: 26px;
+    left: 365px;
+    width: 300px;
+    height: 35px;
+    font-size: 11pt;
+    font-weight: bold;
+    display: none;
+    background-color: #6B9EDD;
+}
+
+.changePasswordSpan{
+    position:absolute;
+    top:7px;
+    left:32px;
+    width:245px;
+    height:20px;
+    color: #FFFFFF;
+}
+
+#ajax_loading {
+    position: absolute;
+    top:245px;
+    left:30px;
+    width:100px;
+    display: none;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+/*CSS for searchData.jsp*/
+#tabs{
+    position: relative;
+    top: 0px;
+    width: 595px;
+}
+
+/*CSS for 404_errorPage.jsp*/
+#errorDiv{
+    height: 598px;
+    position: relative;
+    top: 60px;
+    width: 960px;
+}
+
+#errorInfo{
+    height: 95px;
+    left: 194px;
+    position: relative;
+    top: 50px;
+    width: 590px;
+}
+
+.errTxt1{
+    position:absolute;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #5C6E80;
+}
+
+.errTxt2{
+    position:absolute;
+    top:35px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #5C6E80;
+}
+
+
+/*CSS for appHome.jsp*/
+.validateTips { border: 1px solid transparent; padding: 0.3em; }			
+
+#notification_error {
+    color: red;
+    height: auto;
+    padding: 4px;
+    text-align: center;
+}
+
+#login_response {
+    overflow: auto;
+    color: #FF0000
+}
+
+#appHome_Ajax_Loading {
+    position: relative;
+    top:0px;
+    left:30px;
+    width:100px;
+    display: none;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+#logged_in {
+    padding: 5px;
+    margin: 23px 0 100px 43px;
+    padding: 5px;
+    text-align: center;
+    width: 400px;
+}
+
+#status {
+    margin-top: 20px;
+    width: 310px;
+}
+
+/*CSS for avtarHome.jsp*/
+#changePasswordDiv{
+    position: relative;
+    display: none;      
+}
+
+
+
+.changePasswordSpan{
+    position:absolute;
+    top:7px;
+    left:32px;
+    width:245px;
+    color: #FFFFFF;
+}
+
+#ajax_loading {
+    position: absolute;
+    top:270px;
+    left:30px;
+    width:100px;
+    display: none;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+
+/*CSS for avtarDen.jsp, uploadResume.jsp*/
+.dupSignDiv{
+    display: block;
+    min-height: 20px;
+    min-width: 400px;
+    padding: 9px 0 0;
+}
+
+.m600-v-head1{
+    border-bottom: 1px solid #B6C1CC;
+    float: left;
+    height: 10px;
+    line-height: 22px;
+    margin: 1 0 10px;
+    position: relative;
+    width: 800px;
+
+}
+#univ{
+    left:113px;
+}
+
+.updateExDiv{
+    min-width: 350px;
+}
+
+span{
+    margin-right:  10px;
+}
+#exportToPdf{
+    position: relative;
+}
+#profileTitleText{
+    position: relative;
+    left: 172px;
+    top: -15px;
+    width: 245px;
+    min-height: 10px;
+
+}
+#totalExperienceText{
+    position: relative;
+    left: 50px;
+
+}
+#keySkillsText{
+    position: relative;
+    left: 172px;
+    top: -14px;
+    width: 245px;
+    min-height: 10px;
+
+}
+#currentEmployerText{
+    position: relative;
+    left: 50px;
+
+}
+#roleText{
+    position: relative;
+    left: 50px;
+
+}
+#previousEmployersText{
+    position: relative;
+    left: 50px;
+
+}
+#highestQualificationTable{
+    position: relative;
+    top: 10px;
+}
+#fourQualification{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#fourSpecialization{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#fourUniversity{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#threeQualification{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#threeSpecialization{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#threeUniversity{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#line{
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 6px;
+    line-height: 22px;
+    border-bottom: solid 1px #B6C1CC;
+    margin: 0px 0px 10px 0px;
+    z-index: 530;
+}
+#twoQualification{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#twoSpecialization{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#twoUniversity{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#oneQualification{
+    position: relative;
+    left: 50px;
+    width: 245px;
+}
+#workExperienceTable{
+    position: relative;
+}
+#contactDetails{
+    position: relative;
+    left: -8px;
+    text-align: center;
+    width: 90px;
+}
+#profileHeading{
+    font-weight: 900;
+    text-decoration: underline;
+}
+#educationalQualifications{
+    position: relative;
+    left: -11px;
+    text-align: center;
+    width: 100px;
+}
+#addressText{
+    position: relative;
+    left: 125px;
+    top: -14px;
+    width: 245px;
+    min-height: 10px;
+}
+#nationalityText{
+    position: relative;
+    left: 50px;
+}
+#pinText{
+    position: relative;
+    left: 50px;
+}
+
+/* editEducation Page Styles*/
+#editEducationDiv{
+    position: relative;
+    top: 25px;
+}
+#firstHighestQualificationDiv{
+    position: relative;
+    top: 20px;
+
+}
+#profileHeadingForEditEducation{
+    font-weight: 900;
+}
+#editHighestQualificationHeading{
+    font-size: 14px;
+}
+#editFirstHighestQualification{
+    left: 50px;
+}
+#editFirstHighestSpecialization{
+    left: 50px;
+}
+#editFirstHighestYearOfPassing{
+    left: 50px;
+}
+#editFirstHighestUniversity{
+    left: 50px;
+}
+#editFirstHighestPercentage{
+    left: 50px;
+}
+#editFirstHighestQualificationTableDiv{
+    position: relative;
+    top: 20px;
+}
+#secondHighestQualificationDiv{
+    position: relative;
+    top: -157px;
+    left: 470px;
+}
+#editSecondHighestQualificationTableDiv{
+    position: relative;
+    top: 20px;
+}
+#editSecondHighestQualification{
+    left: 50px;
+}
+#editSecondHighestSpecialization{
+    left: 50px;
+}
+#editSecondHighestYearOfPassing{
+    left: 50px;
+}
+#editSecondHighestUniversity{
+    left: 50px;
+}
+#editSecondHighestPercentage{
+    left: 50px;
+}
+#thirdHighestQualificationDiv{
+    position: relative;
+    top: -110px;
+}
+#editThirdHighestQualificationTableDiv{
+    position: relative;
+    top: 20px;
+}
+#editThirdHighestQualification{
+    left: 50px;
+}
+#editThirdHighestSpecialization{
+    left: 50px;
+}
+#editThirdHighestYearOfPassing{
+    left: 50px;
+}
+#editThirdHighestUniversity{
+    left: 50px;
+}
+#editThirdHighestPercentage{
+    left: 50px;
+}
+#fourthHighestQualificationDiv{
+    position: relative;
+    top: -286px;
+    left: 470px;
+}
+#editForthHighestQualificationTableDiv{
+    position: relative;
+    top: 20px;
+}
+#editForthHighestYearOfPassing{
+    left: 50px;
+}
+#editForthHighestUniversity{
+    left: 50px;
+}
+#editForthHighestPercentage{
+    left: 50px;
+}
+#editEducationSubmitDiv{
+    position: relative;
+    top:-188px;
+    left: 489px;
+}
+#editAdditionalQualificationsDiv{
+    position: relative;
+    top: -200px;
+}
+#editForthHighestQualification{
+    left: 50px;
+}
+#lineForEditEducationPage{
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 24px;
+    line-height: 22px;
+    border-bottom: solid 1px #B6C1CC;
+    margin: 0px 0px 10px 0px;
+    z-index: 530;
+}
+#updateEducationResponseDiv{
+    position: absolute;
+    top: -91px;
+    left: 180px;
+    width: 300px;
+    height: 35px;
+    font-size: 11pt;
+    font-weight: bold;
+    display: none;
+    background-color: #6B9EDD;
+}
+.updateEducationResponseClass{
+    position:absolute;
+    top:7px;
+    left:32px;
+    width:245px;
+    height:20px;
+    color: #FFFFFF;    
+}
+/* Master Home Styles*/
+
+#users-contain label { display:block; }
+#users-contain input { display:block; }
+#users-contain input.text { margin-bottom:12px; width:95%; padding: .4em; }
+
+#users-contain h4{ font-size: 90%; margin: .6em 0; }
+div#users-contain { width: 600px; margin: 20px 0;  }
+div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left;font-size: 75.5%; }
+.ui-dialog .ui-state-error { padding: .3em; }
+
+#resTable tr td{
+    font-size: 75.5%;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+/*App Home Styles */
+.fl {
+    float: left;
+}
+.lhs { 
+    position: relative;
+    top:23px;
+    width: 728px;
+    height: auto;
+}
+.Hire {
+    width: 323px;
+    margin: 0 20px 0 0;
+}
+.mrgn_b10 {
+    margin-bottom: 10px
+}
+.hireUL li{
+    display: inline;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.cl {
+    clear: both;
+    overflow: hidden;
+    height: 0;
+}
+.Hire1 {
+    width: 323px;
+    margin: 0 20px 0 0;
+}
+.mrgn_b11 {
+    margin-bottom: 10px
+}
+.employersLine{
+    position: relative;
+    float: left;
+    width: 290px;
+    height:5px;
+    line-height: 22px;
+    border-bottom: solid 1px #7e99ba;
+    margin: 0px 0px 10px 0px;
+    *.z-index: -1;
+}   
+
+.empLine{
+    position: relative;
+    float: left;
+    width: 280px;
+    height:5px;
+    line-height: 18px;
+    border-bottom: solid 1px #7e99ba;
+    margin: 0px 0px 10px 0px;
+    *.z-index: -1;
+}   
+
+
+
+#upcomingEventDiv{
+    position: absolute;
+    top:17px;
+    width:250px;
+    left:668px;
+    height:300px;
+    border: 1px solid #B6C1CC;
+}
+
+#upcomingEventDiv h4{
+    background: url(../images/resBlk_HD.gif) repeat-x scroll 0 0 transparent;
+    text-align: center;
+    border-bottom: 1px solid #B6C1CC;
+}
+
+#reportsInfo{
+    position: relative; width: 520px;top:110px;  height: 100px;
+    font:normal 12px/1.8em Arial, Helvetica, sans-serif;
+
+}
+
+
+
+#reportsInfo table tr td{
+    margin: 20px;
+    padding:6px;
+    color: #898989;
+
+}
+
+
+#reportsInfo #first{
+    position: relative;top:-40px; margin: 40px;padding: 40px; left:0px}
+#reportsInfo #second{
+    position: relative;top:-150px; left:320px;margin: 20px;padding: 40px;  
+}
+
+
+.studentDetailsFont{
+    font-weight: 900 ;
+
+
+}
+#reportsInfo #reportsInfoHeading{
+
+
+
+    height: 30px;
+    left: 44px;
+    position: relative;
+    text-decoration: underline;
+    top: -60px;
+    width: 179px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+#SearchNumberErrorDiv{
+    position: relative;
+    color:red;
+    display: none;
+
+}
+
+
+/*Styles For Interview Details Label for avtarHome */
+.interviewPer{
+    position: relative;
+
+    /*float: right;*/
+    top:50px;
+    width:200px;
+    height: 200px;
+    color: black;
+    /*margin-left: 10px;*/
+    padding: 5px 70px 5px 7px;
+    border: solid 1px #8E9DB0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    background: url(../images/design/module-back.png) repeat-x left bottom;
+
+}
+
+.detailLine{
+    position: relative;
+    float: left;
+    width: 250px;
+    height:5px;
+    line-height: 20px;
+    border-bottom: solid 1px #B6C1CC;
+    margin: 0px 0px 10px 0px;
+    *.z-index: -1;
+}
+
+
+
+#emailProfileToUser{
+    position: relative;
+    top:20px;
+    left:50px;
+}
+
+/*CSS for uploadResume.jsp*/
+#errorUploadDiv{
+    position: relative;
+    top:-28px;
+    left:130px;
+    width: 190px;
+    color: red;
+    display: none;
+}
+
+#successUploadDiv{
+    position: relative;
+    top:-28px;
+    left:130px;
+    width: 210px;
+    color: #6B9EDD;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+#errorInfoDiv{
+    position: relative;
+    top:-28px;
+    left:130px;
+    width: 210px;
+    color: red;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+/*CSS for viewResume.jsp*/
+#errorResumeDiv{
+    position: relative;
+    top:-70px;
+    left:140px;
+    width: 370px;
+    color: red;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+/*CSS for avtarProfilePic.jsp*/
+#errorUploadPicDiv{
+    position: relative;
+    top:-28px;
+    left:130px;
+    width: 190px;
+    color: red;
+    display: none;
+}
+#successProfilePic{
+    position: relative;
+    top:-28px;
+    left:130px;
+    width: 250px;
+    color: #6B9EDD;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+#tab3{
+    min-height: 90px;
+
+}
+#profileTitleDiv{
+    position: relative;
+    top: 30px;
+}
+#semi-columnDiv{
+    position: relative;
+    left : 42px;
+}
+
+#profileTitleDiv{
+    position: relative;
+    top: 10px;
+}
+.landPhone{
+    position: relative;
+    left: -22px;
+    top: -1px;
+}
+#keySkillsDiv{
+    position: relative;
+    top: 5px;
+}
+
+/*Style for Scroll Bar Address Text ---- Start*/
+
+#updateHolder {
+    width: 300px;  /* <= For Width: change the width value */
+    color: #333;
+    margin-top: 10px;
+    overflow: hidden;
+    border:1px solid #CCCCCC;
+}
+
+#updateContainer {
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+
+}
+
+#updateContent {
+    background: #fff;
+    position: absolute;
+    padding-right: 12px;
+}
+
+#updateScollBar {
+    background: #F2F2F2;
+    border-left: 1px solid #DADADA;
+    position: absolute;
+    width: 10px;
+    right: 0;
+    bottom: 0;
+    cursor: default;
+    zoom: 1;
+    filter: alpha(opacity=25); /* For IE8 and earlier */
+    opacity: 0.25;	  
+}
+
+#updateScollScrubber {
+    background-color: 909090;
+    width: 9px;
+    height: 100px;
+    position: absolute;
+    border-left:1px solid #676767;
+    border-top:1px solid #676767;
+
+}
+
+#updateScollBar, #updateContainer, #updateHolder {
+    height: 258px; /* <= For Height: change the height value */
+}
+
+
+
+/*End for Scroll Bar Style*/
+
+/* Forgot Page Line*/
+.forgotLine {
+    position: relative;
+    float: left;
+    width: 950px;
+    height: 0px;
+    line-height: 30px;
+    border-bottom: solid 1px #B6C1CC;
+    margin: 0px 0px 10px 0px;
+    *.z-index: -1;
+}
+
+/* New Style For forgotPassword Page*/
+
+#emailResponseText{
+    position: relative;
+    top:-20px;
+    left:250px;
+    width:208px;
+    height: 35px;
+    font-size: 9pt;
+    font-weight: bold;
+    display: none;
+    background-color: #6B9EDD;
+}
+
+.emailResponseText{
+    position: relative;
+    text-align: center;
+    top: -5px;
+    left: 5px;
+    width: 175px;
+    color: #FFFFFF;
+}
+#emailResponseText1{
+    position: relative;
+    top:-20px;
+    left:250px;
+    width:208px;
+    height: 35px;
+    font-size: 9pt;
+    font-weight: bold;
+    display: none;
+    background-color: #6B9EDD;
+}
+
+.emailResponseText1{
+    position: relative;
+    top: -5px;
+    left: 5px;
+    width: 175px;
+    color: #FFFFFF;
+}
+#emailPasswordFailureDiv{
+    color: red;
+    display: none;
+    left: 268px;
+    position: relative;
+    top: -23px;
+    width: 188px;
+   
+}
+#ajax_loading_forgotPassword_Processing{
+    position: relative;
+    display: none;
+    top:-8px;
+    left:11px;
+}
+
+
+/*CSS for emailProfileView.jsp*/
+
+#ajax_loading_emailResume{
+    position: relative;
+    top: -12px;
+    left: 285px;
+    width: 100px;
+    display: none;
+}
+
+#resumeSuccessResponse{
+    position: relative;
+    top: -12px;
+    left: 280px;
+    width: 250px;
+    color: #6B9EDD;
+    font-weight: bold;
+    font-size: 10pt;
+
+}
+
+#resumeFailureResponse{
+    position: relative;
+    top: -12px;
+    left: 280px;
+    width: 250px;
+    color: red;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+#toAddressErrorDiv{
+    position: relative;
+    top: -12px;
+    left: 285px;
+    width: 200px;
+    color: red;
+    display: none;
+}
+
+#fromAddressErrorDiv{
+    position: relative;
+    top: -12px;
+    left: 285px;
+    width: 200px;
+    color: red;
+    display: none;
+}
+
+#subjectErrorDiv{
+    position: relative;
+    top: -12px;
+    left: 285px;
+    width: 200px;
+    color: red;
+    display: none;
+}
+
+#attachmentErrorDiv{
+    position: relative;
+    top: -12px;
+    left: 285px;
+    width: 200px;
+    color: red;
+    display: none;
+}
+
+#messageErrorDiv{
+    position: relative;
+    top: -12px;
+    left: 285px;
+    width: 200px;
+    color: red;
+    display: none;
+}
+
+/* Css for createEvent.jsp*/
+#createEventDiv{
+    position: relative;
+    top: 30px;
+    width: 300px;
+    height: 300px;
+}
+#submitForCreateEvent{
+    position: relative;
+    top: 15px;
+    left: 250px;
+
+}
+#cancelForCreateEvent{
+    position: relative;
+    top: 15px;
+    left: 270px;
+}
+#ajax_loading_createEvent{
+    position: relative;
+    top: 28px;
+    left: 78px;
+    display: none;
+}
+#createdEventSucess{
+    position: relative;
+    top: 32px;
+    left: 200px;
+    width:208px;
+    height: 35px;
+    font-size: 9pt;
+    font-weight: bold;
+    background-color: #6B9EDD;
+    display: none;
+
+}
+.createdEventSucess{
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    width: 175px;
+    color: #FFFFFF;
+}
+#ajax_loading_createEventText{
+    position: relative;
+    top:-40px;
+    left: 257px;
+}
+/* Styles For Success Div in appHome  */
+.chatBlk {
+    width: 228px;
+}
+.mrgn_r20 {
+    margin-right: 20px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.w160 {
+    width: 160px;
+}.disBlk {
+    display: block;
+    width: 190px;
+}.mrgn_b10 {
+    margin-bottom: 10px
+}
+.date {
+    color: #db6200
+}
+#testSuccessDiv{
+    position: relative;
+    top:13px;
+    left:10px;
+
+}
+
+
+
+
+#eventTimeSpecific{
+    position: relative;
+    left: 20px;
+}
+/* New Styles For UpcomingEvent Div for appHome */
+.cont {
+    padding: 10px;
+}
+.walkinZone {
+    display: inline-block;
+    width: 81px;
+    height: 21px;
+    background: url(../images/image_sprt.gif) no-repeat scroll 100% -211px transparent;
+} 
+.disBlk {
+    display: block;
+}
+/*
+#successStoryDiv{
+    position: relative;
+
+}
+.SuccessImageDiv{
+    position: relative;
+    top:0px;
+}
+*/
+
+/*Css for createSuccessStory.jsp*/
+
+#ajax_loading_enrollmentShow{
+    position: relative;
+    top: 4px;
+    left: 22px;
+    display: none;
+}
+#ajax_loading_createSucessStory_processing{
+    left: 25px;
+    position: relative;
+    top: -16px;
+}
+#submitForCreateSuccessStories{
+    position: relative;
+    top: 15px;
+    left: 250px;
+}
+#ajax_loading_createSucessStory{
+    position: relative;
+    top: 28px;
+    left: 78px;
+    display: none;
+}
+#ajax_loading_createSuccessStory_Processing{
+    position: relative;
+    top:-14px;
+    left: 23px;
+}
+#createdSuccessStory{
+    position: relative;
+    top: 32px;
+    left: 200px;
+    width:208px;
+    height: 35px;
+    font-size: 9pt;
+    font-weight: bold;
+    background-color: #6B9EDD;
+    display: none;
+}
+
+/*Css for editPerInfo.jsp*/
+#submitForUpdateProfile{
+    position: relative;
+}
+#editPerInfoSubmitt{
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+#ajax_loading_editPerInfo{
+    display: none;
+    position: relative;
+    top: 32px;
+    float: left;
+    left: -345px;
+}
+#ajax_loading_editPerInfoText{
+    left: 20px;
+    position: relative;
+    top: -16px;
+}
+#editPerInfoSuccess{
+    background-color: #6B9EDD;
+    display: none;
+    font-size: 9pt;
+    font-weight: bold;
+    height: 35px;
+    left: 16px;
+    position: relative;
+    width: 208px;
+    float: left;
+}
+.editPerInfoSuccess{
+    position: relative;
+    color: #FFFFFF;
+    left: 18px;
+    width: 175px;
+    top: 9px;
+}
+#redirectInfoDiv{
+    background-color: #6B9EDD;
+    display: none;
+    font-size: 9pt;
+    font-weight: bold;
+    height: 35px;
+    left: 16px;
+    position: relative;
+    width: 208px;
+    float: left;
+}
+.redirectInfoClass{
+    position: relative;
+    color: #FFFFFF;
+    left: 18px;
+    width: 175px;
+    top: 9px;
+}
+
+/*Css for fbProfileView.jsp*/
+
+#submitForUpdateFbStatus{
+    position: relative;
+    left: 130px;
+}
+#cancelForUpdateFbStatus{
+    position: relative;
+    left: 133px;
+}
+#submitForFriendsMessage{
+    position: relative;
+    left: 130px;
+}
+#cancelForFriendsMesaage{
+    position: relative;
+    left: 133px;
+}
+#postStatusResponseDiv{
+    position: relative;
+    top: 125px;
+    left: 168px;
+    width: 250px;
+    height: 35px;
+    font-size: 11pt;
+    font-weight: bold;
+    display: none;
+    background-color: #6B9EDD;
+}
+.postStatusResponseDiv{
+    position:absolute;
+    top:7px;
+    left:32px;
+    width:245px;
+    height:20px;
+    color: #FFFFFF;    
+}
+#ajax_loading_fbStatus{
+    position: relative;
+    top: -28px;
+    left: 184px;
+    display: none;
+    width: 100px;
+}
+#redirectPostStatusDiv{
+    position: relative;
+    top: 125px;
+    left: 168px;
+    width: 250px;
+    height: 35px;
+    font-size: 11pt;
+    font-weight: bold;
+    display: none;
+    background-color: #6B9EDD;
+}
+#successStorySeparatorLine{
+    position: relative;
+    float: left;
+    width: 250px;
+    height:5px;
+    left: 20px;
+    top: 10px;
+    line-height: 18px;
+    border-bottom: solid 1px #7e99ba;
+    margin: 0px 0px 10px 0px;
+    *.z-index: -1;
+}
+
+/*Css for About Us Page*/
+#lineForAboutUS{
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 6px;
+    line-height: 22px;
+    border-bottom: solid 1px #B6C1CC;
+    margin: 0px 0px 10px 0px;
+    z-index: 530;
+}
+#dataForAboutUs{
+    color: #5C6E80;
+}
+#headerColor{
+    color: #6B9EDD;
+}
+#dataMain{
+    position: relative;
+    top: 10px;
+}
+#imageForAboutUsPage{
+    position: relative;
+    top: 10px;
+}
+
+/*Css for Contact us*/
+#contactUsDiv{
+    position: relative;
+    color: #5C6E80;
+}
+#lineForContactUS{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 6px;
+    line-height: 22px;
+    border-bottom: solid 1px #B6C1CC;
+    margin: 0px 0px 10px 0px;
+    z-index: 530;
+}
+#imageForContactUsPage{
+    position: relative;
+    top: 10px;
+}

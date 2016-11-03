@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>nl.tecon.ehour</groupId>
+        <version>1.1</version>
+        <artifactId>eHour-parent</artifactId>
+    </parent>
+
+    <groupId>net.rrm.ehour</groupId>
+    <version>1.4.4-SNAPSHOT</version>
+    <artifactId>eHour</artifactId>
+    <packaging>pom</packaging>
+    <name>eHour</name>
+    <url>https://www.ehour.nl/</url>
+
+    <modules>
+        <module>eHour-common</module>
+        <module>eHour-persistence</module>
+        <module>eHour-persistence-mysql</module>
+        <module>eHour-persistence-postgresql</module>
+        <module>eHour-service</module>
+        <module>eHour-wicketweb</module>
+        <module>eHour-web</module>
+        <module>eHour-audit</module>
+        <module>eHour-standalone</module>
+        <module>eHour-war</module>
+        <module>eHour-selenium</module>
+        <module>eHour-jetty</module>
+    </modules>
+
+
+    <properties>
+        <ehour.version>1.4.4-SNAPSHOT</ehour.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>eHour</id>
+            <name>eHour Maven Repository Group</name>
+            <url>http://nexus.te-con.nl/content/groups/public</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+</project>

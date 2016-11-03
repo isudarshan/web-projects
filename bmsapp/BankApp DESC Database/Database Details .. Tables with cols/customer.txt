@@ -1,0 +1,4 @@
+AccountId(PK)   ----------------  BigInt    
+DetaildId       ----------------  BigInt
+UserId
+          ----------------  BigInt

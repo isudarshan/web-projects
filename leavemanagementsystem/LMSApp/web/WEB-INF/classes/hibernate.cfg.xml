@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/lms_db</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+
+        <!--
+        <property name="hibernate.connection.url">jdbc:mysql://mysql-dmsapp.jelastic.servint.net/dms_db</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">jacSLjcfWt</property>
+        -->
+
+        <mapping resource="mappings/AppUser.hbm.xml" />
+        <mapping resource="mappings/Department.hbm.xml" />
+        <mapping resource="mappings/Staff.hbm.xml" />
+        <mapping resource="mappings/StaffLeave.hbm.xml" />
+        <mapping resource="mappings/Remarks.hbm.xml" />
+        <mapping resource="mappings/Bal.hbm.xml" />
+       
+        
+		
+    </session-factory>
+</hibernate-configuration>

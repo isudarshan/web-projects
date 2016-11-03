@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<EHOUR DB_VERSION="0.8.1">
+    <CONFIGURATION>
+        <CONFIG KEY="completeDayHours">8</CONFIG>
+        <CONFIG KEY="showTurnOver">true</CONFIG>
+        <CONFIG KEY="localeLanguage">en</CONFIG>
+        <CONFIG KEY="currency">Euro</CONFIG>
+        <CONFIG KEY="localeCountry"></CONFIG>
+        <CONFIG KEY="availableTranslations">en,nl,fr,it</CONFIG>
+        <CONFIG KEY="mailFrom">noreply@localhost.net</CONFIG>
+        <CONFIG KEY="mailSmtp">127.0.0.1</CONFIG>
+        <CONFIG KEY="demoMode">false</CONFIG>
+        <CONFIG KEY="version">1.4.2</CONFIG>
+        <CONFIG KEY="smtpPort">25</CONFIG>
+    </CONFIGURATION>
+    <JOIN_TABLES>
+        <USER_TO_USERROLES>
+            <USER_TO_USERROLE USER_ID="1" ROLE="ROLE_ADMIN"></USER_TO_USERROLE>
+            <USER_TO_USERROLE USER_ID="1" ROLE="ROLE_CONSULTANT"></USER_TO_USERROLE>
+            <USER_TO_USERROLE USER_ID="1" ROLE="ROLE_PROJECTMANAGER"></USER_TO_USERROLE>
+            <USER_TO_USERROLE USER_ID="1" ROLE="ROLE_REPORT"></USER_TO_USERROLE>
+            <USER_TO_USERROLE USER_ID="2" ROLE="ROLE_MANAGER"></USER_TO_USERROLE>
+            <USER_TO_USERROLE USER_ID="2" ROLE="ROLE_PROJECTMANAGER"></USER_TO_USERROLE>
+            <USER_TO_USERROLE USER_ID="2" ROLE="ROLE_REPORT"></USER_TO_USERROLE>
+            <USER_TO_USERROLE USER_ID="3" ROLE="ROLE_MANAGER"></USER_TO_USERROLE>
+            <USER_TO_USERROLE USER_ID="3" ROLE="ROLE_REPORT"></USER_TO_USERROLE>
+        </USER_TO_USERROLES>
+        <USER_TO_DEPARTMENTS>
+            <USER_TO_DEPARTMENT USER_ID="1" DEPARTMENT_ID="1"></USER_TO_DEPARTMENT>
+            <USER_TO_DEPARTMENT USER_ID="1" DEPARTMENT_ID="2"></USER_TO_DEPARTMENT>
+            <USER_TO_DEPARTMENT USER_ID="2" DEPARTMENT_ID="1"></USER_TO_DEPARTMENT>
+            <USER_TO_DEPARTMENT USER_ID="3" DEPARTMENT_ID="1"></USER_TO_DEPARTMENT>
+        </USER_TO_DEPARTMENTS>
+    </JOIN_TABLES>
+    <ENTITY_TABLES>
+        <USER_DEPARTMENTS CLASS="net.rrm.ehour.domain.UserDepartment">
+            <USER_DEPARTMENT>
+                <DEPARTMENT_ID>1</DEPARTMENT_ID>
+                <NAME>Internal</NAME>
+                <CODE>INT</CODE>
+            </USER_DEPARTMENT>
+            <USER_DEPARTMENT>
+                <DEPARTMENT_ID>2</DEPARTMENT_ID>
+                <NAME>State Street Bank</NAME>
+                <CODE>SSB</CODE>
+            </USER_DEPARTMENT>
+        </USER_DEPARTMENTS>
+        <USER_ROLES CLASS="net.rrm.ehour.domain.UserRole">
+            <USER_ROLE>
+                <ROLE>ROLE_ADMIN</ROLE>
+                <NAME>Administrator</NAME>
+            </USER_ROLE>
+            <USER_ROLE>
+                <ROLE>ROLE_CONSULTANT</ROLE>
+                <NAME>Consultant</NAME>
+            </USER_ROLE>
+            <USER_ROLE>
+                <ROLE>ROLE_MANAGER</ROLE>
+                <NAME>Manager</NAME>
+            </USER_ROLE>
+            <USER_ROLE>
+                <ROLE>ROLE_PROJECTMANAGER</ROLE>
+                <NAME>PM</NAME>
+            </USER_ROLE>
+            <USER_ROLE>
+                <ROLE>ROLE_REPORT</ROLE>
+                <NAME>Report role</NAME>
+            </USER_ROLE>
+        </USER_ROLES>
+        <USERLIST CLASS="net.rrm.ehour.domain.User">
+            <USERS>
+                <USER_ID>1</USER_ID>
+                <USERNAME>admin</USERNAME>
+                <PASSWORD>1</PASSWORD>
+                <FIRST_NAME>Admin</FIRST_NAME>
+                <LAST_NAME>Admin</LAST_NAME>
+                <EMAIL>admin@example.com</EMAIL>
+                <SALT>1</SALT>
+                <ACTIVE>Y</ACTIVE>
+            </USERS>
+            <USERS>
+                <USER_ID>2</USER_ID>
+                <USERNAME>thies</USERNAME>
+                <PASSWORD>a</PASSWORD>
+                <FIRST_NAME>Thies</FIRST_NAME>
+                <LAST_NAME>Edeling</LAST_NAME>
+                <EMAIL>thies@example.com</EMAIL>
+                <SALT>2</SALT>
+                <ACTIVE>Y</ACTIVE>
+            </USERS>
+            <USERS>
+                <USER_ID>3</USER_ID>
+                <USERNAME>thies2</USERNAME>
+                <PASSWORD>a</PASSWORD>
+                <FIRST_NAME>Thies</FIRST_NAME>
+                <LAST_NAME>Edeling</LAST_NAME>
+                <EMAIL>thies@example.com</EMAIL>
+                <SALT>2</SALT>
+                <ACTIVE>Y</ACTIVE>
+            </USERS>
+        </USERLIST>
+    </ENTITY_TABLES>
+</EHOUR>

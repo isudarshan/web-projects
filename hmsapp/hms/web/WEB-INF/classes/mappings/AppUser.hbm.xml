@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  
+  
+<hibernate-mapping>
+	<class name="com.hms.domain.sub.AppUser" table="appuser">
+		<id column="id" name="id" type="java.lang.Long">
+			<generator class="native" />
+		</id>
+		
+		<property column="guid" name="guid" type="java.lang.String" />
+                <property column="username" name="userName" type="java.lang.String" />
+		<property column="password" name="password" type="java.lang.String" />
+		<property column="userrole" name="userRole" type="java.lang.String" />
+                <property column="securityQuestion" name="securityQuestion" type="java.lang.String" />
+		<property column="answer" name="answer" type="java.lang.String" />
+		<property column="createdOn" name="createdOn" type="java.util.Date" />
+		<property column="createdBy" name="createdBy" type="java.lang.String" />
+		<property column="modifiedBy" name="modifiedBy" type="java.lang.String" />
+		<property column="modifiedOn" name="modifiedOn" type="java.util.Date" />
+		<property column="active" name="active" type="java.lang.Long" />
+		
+		
+	</class>
+</hibernate-mapping>

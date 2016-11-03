@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.dmsapp.domain.sub.MarksMaster" table="marksmaster"
+		discriminator-value="0">
+        <id column="id" name="id" type="java.lang.Integer">
+            <generator class="native" />
+        </id>
+        <property column="guid" name="guid" type="java.lang.String" />
+        <property column="studentid" name="studentId" type="java.lang.String" />        
+        <property column="inter1" name="internalOne" type="java.lang.String" />
+        <property column="inter2" name="internalTwo" type="java.lang.String" />
+        <property column="assignment" name="assignmentMarks" type="java.lang.String" />
+        <property column="attendance" name="attendanceMarks" type="java.lang.String" />
+        <property column="year" name="year" type="java.lang.String" />
+        <property column="branch" name="branch" type="java.lang.String" />
+        <property column="semister" name="semister" type="java.lang.String" />
+        <property column="paper" name="paper" type="java.lang.String" />
+        <property column="active" name="active" type="java.lang.Integer" />
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,90 @@
+12:08:29,298  WARN HibernateUtils:27 - Initial SessionFactory creation failed.
+org.hibernate.MappingNotFoundException: resource: mappings/AppUser.hbm.xml not found
+	at org.hibernate.cfg.Configuration.addResource(Configuration.java:772)
+	at org.hibernate.cfg.Configuration.parseMappingElement(Configuration.java:2317)
+	at org.hibernate.cfg.Configuration.parseSessionFactory(Configuration.java:2283)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2263)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2216)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2131)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2110)
+	at com.hms.utils.HibernateUtils.<clinit>(HibernateUtils.java:23)
+	at com.hms.service.impl.AppUserServiceImpl.create(AppUserServiceImpl.java:33)
+	at com.hms.tests.Test.main(Test.java:35)
+12:09:24,614  WARN HibernateUtils:27 - Initial SessionFactory creation failed.
+org.hibernate.MappingNotFoundException: resource: mappings/AppUser.hbm.xml not found
+	at org.hibernate.cfg.Configuration.addResource(Configuration.java:772)
+	at org.hibernate.cfg.Configuration.parseMappingElement(Configuration.java:2317)
+	at org.hibernate.cfg.Configuration.parseSessionFactory(Configuration.java:2283)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2263)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2216)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2131)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2110)
+	at com.hms.utils.HibernateUtils.<clinit>(HibernateUtils.java:23)
+	at com.hms.service.impl.AppUserServiceImpl.create(AppUserServiceImpl.java:33)
+	at com.hms.tests.Test.main(Test.java:35)
+13:59:58,548  WARN HibernateUtils:27 - Initial SessionFactory creation failed.
+org.hibernate.HibernateException: Unable to get the default Bean Validation factory
+	at org.hibernate.cfg.beanvalidation.BeanValidationActivator.applyDDL(BeanValidationActivator.java:127)
+	at org.hibernate.cfg.Configuration.applyBeanValidationConstraintsOnDDL(Configuration.java:1677)
+	at org.hibernate.cfg.Configuration.applyConstraintsToDDL(Configuration.java:1627)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1418)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1829)
+	at com.hms.utils.HibernateUtils.<clinit>(HibernateUtils.java:23)
+	at com.hms.service.impl.RegisteredDoctorServiceImpl.create(RegisteredDoctorServiceImpl.java:34)
+	at com.hms.tests.Test.main(Test.java:41)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.hibernate.cfg.beanvalidation.BeanValidationActivator.applyDDL(BeanValidationActivator.java:118)
+	... 7 more
+Caused by: org.hibernate.AssertionFailure: Entity class not found
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.applyDDL(TypeSafeActivator.java:124)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: com.hms.domain.sub.RegisterdDoctor
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:247)
+	at org.hibernate.util.ReflectHelper.classForName(ReflectHelper.java:170)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.applyDDL(TypeSafeActivator.java:121)
+	... 12 more
+14:00:30,324  WARN HibernateUtils:27 - Initial SessionFactory creation failed.
+org.hibernate.HibernateException: Unable to get the default Bean Validation factory
+	at org.hibernate.cfg.beanvalidation.BeanValidationActivator.applyDDL(BeanValidationActivator.java:127)
+	at org.hibernate.cfg.Configuration.applyBeanValidationConstraintsOnDDL(Configuration.java:1677)
+	at org.hibernate.cfg.Configuration.applyConstraintsToDDL(Configuration.java:1627)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1418)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1829)
+	at com.hms.utils.HibernateUtils.<clinit>(HibernateUtils.java:23)
+	at com.hms.service.impl.RegisteredDoctorServiceImpl.create(RegisteredDoctorServiceImpl.java:34)
+	at com.hms.tests.Test.main(Test.java:41)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.hibernate.cfg.beanvalidation.BeanValidationActivator.applyDDL(BeanValidationActivator.java:118)
+	... 7 more
+Caused by: org.hibernate.AssertionFailure: Entity class not found
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.applyDDL(TypeSafeActivator.java:124)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: com.hms.domain.sub.RegisterdDoctor
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:247)
+	at org.hibernate.util.ReflectHelper.classForName(ReflectHelper.java:170)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.applyDDL(TypeSafeActivator.java:121)
+	... 12 more

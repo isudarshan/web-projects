@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.asiapp.domain.sub.FeedBack" table="feedback" discriminator-value="0">
+
+        <id column="ID" name="id" type="java.lang.Integer">
+            <generator class="native" />
+        </id>
+        <property column="GUID" name="guid" type="java.lang.String" />
+
+        <property column="STUDENTID" name="studentId" type="java.lang.String" />       
+
+        <property column="DEPARTMENTNAME" name="departmentName" type="java.lang.String" />
+        <property column="DEPARTMENTCODE" name="departmentCode" type="java.lang.String" />
+        <property column="SUBJECTNAME" name="subjectName" type="java.lang.String" />
+        <property column="SUBJECTCODE" name="subjectCode" type="java.lang.String" />
+        <property column="YEAR" name="year" type="java.lang.String" />
+        <property column="SEMISTER" name="semister" type="java.lang.String" />
+        <property column="FEEDBACKTOTAL" name="feedBackTotal" type="java.lang.String" />
+        <property column="FACULTYNAME" name="facultyName" type="java.lang.String" />
+
+        <property column="CREATEDON" name="createdOn" type="java.util.Date" />
+        <property column="CREATEDBY" name="createdBy" type="java.lang.Integer" />
+        <property column="MODIFIEDON" name="modifiedOn" type="java.util.Date" />
+        <property column="MODIFIEDBY" name="modifiedBy" type="java.lang.Integer" />
+        <property column="ACTIVE" name="active" type="java.lang.Integer" />
+    </class>
+
+</hibernate-mapping>

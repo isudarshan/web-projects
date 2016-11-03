@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 21, 2014 10:52:37 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.bankapp.domain.Customer" table="customer" lazy="false">
+        <id name="customerId">
+            <column name="CustomerId" />
+            <generator class="assigned" />
+        </id> 
+        <many-to-one column="AccountId" name="accountId" cascade="all" unique="true"/>
+        <many-to-one column="DetaildId" name="detaildId" cascade="all" unique="true"/>
+        <many-to-one column="UserId" name="userId" cascade="all" unique="true"/>
+        
+    </class>
+</hibernate-mapping>

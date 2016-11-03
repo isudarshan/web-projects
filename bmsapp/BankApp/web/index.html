@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled Page</title>
+        <meta name="generator" content="Friends .. ">
+        <style>
+            html, body
+            {
+                height: 100%;
+            }
+            div#space
+            {
+                width: 1px;
+                height: 50%;
+                margin-bottom: -301px;
+                float:left
+            }
+            div#container
+            {
+                width: 970px;
+                height: 603px;
+                margin: 0 auto;
+                position: relative;
+                clear: left;
+            }
+            body
+            {
+                background-color: #F5F6F6;
+                background-image: url(images/index_bkgrnd.png);
+                background-repeat: repeat-y;
+                color: #000000;
+                font-family: Arial;
+                font-size: 8px;
+                line-height: 1.1875;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <link href="cupertino/jquery.ui.all.css" rel="stylesheet">
+        <style>
+            a
+            {
+                color: #0000FF;
+                text-decoration: underline;
+            }
+            a:visited
+            {
+                color: #800080;
+            }
+            a:active
+            {
+                color: #FF0000;
+            }
+            a:hover
+            {
+                color: #0000FF;
+                text-decoration: underline;
+            }
+        </style>
+        <style>
+            #Marquee1
+            {
+                background-color: #EEEEEE;
+                border: 1px #C0C0C0 solid;
+                text-align: center;
+            }
+            #wb_Carousel1
+            {
+                background-color: transparent;
+            }
+            #Carousel1 .frame
+            {
+                width: 643px;
+                display: inline-block;
+                float: left;
+                height: 383px;
+            }
+            #wb_Carousel1 .pagination
+            {
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                vertical-align: middle;
+                width: 643px;
+                z-index: 999;
+            }
+            #wb_Carousel1 .pagination img
+            {
+                border-style: none;
+                padding: 14px 14px 14px 14px;
+            }
+            #Image1
+            {
+                border: 0px #000000 solid;
+                -moz-box-shadow: 0px 0px 10px #000000;
+                -webkit-box-shadow: 0px 0px 10px #000000;
+                box-shadow: 0px 0px 10px #000000;
+            }
+            #Image2
+            {
+                border: 0px #000000 solid;
+                -moz-box-shadow: 0px 0px 10px #000000;
+                -webkit-box-shadow: 0px 0px 10px #000000;
+                box-shadow: 0px 0px 10px #000000;
+            }
+            #Image3
+            {
+                border: 0px #000000 solid;
+                -moz-box-shadow: 0px 0px 10px #000000;
+                -webkit-box-shadow: 0px 0px 10px #000000;
+                box-shadow: 0px 0px 10px #000000;
+            }
+            #Image4
+            {
+                border: 0px #000000 solid;
+                -moz-box-shadow: 0px 0px 10px #000000;
+                -webkit-box-shadow: 0px 0px 10px #000000;
+                box-shadow: 0px 0px 10px #000000;
+            }
+            #jQueryAccordion1 .ui-accordion-header
+            {
+                font-family: Arial;
+                font-size: 13px;
+                font-weight: normal;
+                font-style: normal;
+                padding: 10px 10px 10px 30px;
+            }
+            #jQueryAccordion1 h3
+            {
+                display: block;
+            }
+            #jQueryAccordion1 .ui-accordion-header .ui-icon
+            {
+                left: 10px;
+            }
+            #jQueryAccordion1 .ui-accordion-content
+            {
+                padding: 0 0 0 0;
+                position: relative;
+            }
+            #Image5
+            {
+                border: 0px #000000 solid;
+            }
+            #Image6
+            {
+                border: 0px #000000 solid;
+            }
+            #Image7
+            {
+                border: 0px #000000 solid;
+            }
+            #jQueryButton1
+            {
+                font-family: "Comic Sans MS";
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #wb_jQueryButton1 .ui-button-text
+            {
+                padding: 0;
+                line-height: 25px;
+            }
+            #jQueryButton1
+            {
+                color: #2779AA;
+            }
+            #jQueryButton1 :hover
+            {
+                color: #0070A3;
+            }
+            #jQueryButton1 :active
+            {
+                color: #FFFFFF;
+            }
+            #wb_jQueryButton1 .ui-button-text-icon .ui-button-icon-primary,
+            #wb_jQueryButton1 .ui-button-text-icons .ui-button-icon-primary,
+            #wb_jQueryButton1 .ui-button-icons-only .ui-button-icon-primary
+            {
+                left: 10px;
+            }
+            #wb_jQueryButton1 .ui-button-text-icons .ui-button-icon-secondary,
+            #wb_jQueryButton1 .ui-button-icons-only .ui-button-icon-secondary
+            {
+                right: auto;
+                left: 10px;
+            }
+        </style>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.ui.effect.min.js"></script>
+        <script src="js/jquery.ui.effect-scale.min.js"></script>
+        <script src="js/wb.carousel.effects.min.js"></script>
+        <script src="js/jquery.ui.core.min.js"></script>
+        <script src="js/jquery.ui.widget.min.js"></script>
+        <script src="js/jquery.ui.accordion.min.js"></script>
+        <script src="js/jquery.ui.button.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                var Carousel1Opts =
+                        {
+                            delay: 5000,
+                            duration: 500,
+                            easing: 'linear',
+                            mode: 'puff',
+                            direction: '',
+                            pagination: true,
+                            pagination_img_default: 'images/page_default.png',
+                            pagination_img_active: 'images/page_active.png',
+                            start: 0,
+                            width: 643
+                        };
+                $("#Carousel1").carouseleffects(Carousel1Opts);
+                $("#Carousel1_back a").click(function()
+                {
+                    $('#Carousel1').carouseleffects('prev');
+                });
+                $("#Carousel1_next a").click(function()
+                {
+                    $('#Carousel1').carouseleffects('next');
+                });
+                var jQueryAccordion1Opts =
+                        {
+                            event: 'click',
+                            animate: 'linear',
+                            header: 'h3',
+                            heightStyle: 'fill'
+                        };
+                $("#jQueryAccordion1_id").accordion(jQueryAccordion1Opts);
+                $("#jQueryButton1").button({icons: {primary: 'ui-icon-arrow-1-e', secondary: 'ui-icon-arrow-1-e'}});
+            });
+        </script>
+    </head>
+    <body>
+        <div id="space"><br></div>
+        <div id="container">
+            <img src="images/img0001.jpg" id="Banner1" alt="Business Bank" style="position:absolute;left:41px;top:0px;width:910px;height:116px;border-width:0;z-index:10;">
+            <marquee direction="left" scrolldelay="100" scrollamount="3" behavior="alternate" loop="0" style="position:absolute;left:41px;top:115px;width:906px;height:30px;z-index:11;" id="Marquee1" onmouseover="this.stop()" onmouseout="this.start()"><span style="color:#DC143C;font-family:Verdana;font-size:17px;"><strong>For faster and effective transactions ............. The only Bank which has more security than the swiss !! ... LOGIN TODAY ITSELF TO SEE AND ENJOY MANY MORE FEATURES </strong></span></marquee>
+            <div id="wb_JavaScript1" style="position:absolute;left:839px;top:94px;width:108px;height:19px;z-index:12;">
+                <div style="color:#FFFFFF;font-size:14px;font-family:Courier New;font-weight:bold;font-style:normal;text-decoration:none" id="basicclock"></div>
+                <script>
+                    function clock()
+                    {
+                        var digital = new Date();
+                        var hours = digital.getHours();
+                        var minutes = digital.getMinutes();
+                        var seconds = digital.getSeconds();
+                        if (minutes <= 9)
+                            minutes = "0" + minutes;
+                        if (seconds <= 9)
+                            seconds = "0" + seconds;
+                        dispTime = hours + ":" + minutes + ":" + seconds;
+
+                        var basicclock = document.getElementById('basicclock');
+                        basicclock.innerHTML = dispTime;
+                        setTimeout("clock()", 1000);
+                    }
+                    clock();
+                </script>
+
+            </div>
+            <div id="wb_JavaScript2" style="position:absolute;left:802px;top:148px;width:162px;height:32px;z-index:13;">
+                <script>
+                    document.write("<font style=\"color:#000000;font-size:12px;font-family:Arial;font-weight:normal;font-style:normal;text-decoration:none\">Last updated: " + document.lastModified + "<\/font>");
+                </script>    </div>
+            <div id="wb_Carousel1" style="position:absolute;left:41px;top:149px;width:643px;height:383px;z-index:14;overflow:hidden">
+                <div id="Carousel1" style="position:absolute">
+                    <div class="frame">
+                        <div id="wb_Image1" style="position:absolute;left:18px;top:13px;width:637px;height:322px;z-index:0;">
+                            <img src="images/Bank-sign-3.jpg" id="Image1" alt="" style="width:637px;height:322px;"></div>
+                    </div>
+                    <div class="frame" style="display:none">
+                        <div id="wb_Image2" style="position:absolute;left:22px;top:24px;width:659px;height:311px;z-index:1;">
+                            <img src="images/Desired-network.jpg" id="Image2" alt="" style="width:659px;height:311px;"></div>
+                    </div>
+                    <div class="frame" style="display:none">
+                        <div id="wb_Image3" style="position:absolute;left:5px;top:29px;width:662px;height:308px;z-index:2;">
+                            <img src="images/Intermediary-banking-services.jpg" id="Image3" alt="" style="width:662px;height:308px;"></div>
+                    </div>
+                    <div class="frame" style="display:none">
+                        <div id="wb_Image4" style="position:absolute;left:20px;top:22px;width:643px;height:313px;z-index:3;">
+                            <img src="images/save_key_bank.jpg" id="Image4" alt="" style="width:643px;height:313px;"></div>
+                    </div>
+                </div>
+                <div id="Carousel1_back" style="position:absolute;left:4px;top:176px;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-style:none" src="images/carousel_back.png"></a></div>
+                <div id="Carousel1_next" style="position:absolute;left:609px;top:176px;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-style:none" src="images/carousel_next.png"></a></div>
+            </div>
+            <div id="jQueryAccordion1" style="position:absolute;left:692px;top:181px;width:244px;height:314px;z-index:15;">
+                <div id="jQueryAccordion1_id" style="position:absolute;width:244px;height:314px">
+                    <h3>Donate to the needy</h3>
+                    <div>
+                        <div id="wb_Image5" style="position:absolute;left:11px;top:4px;width:206px;height:152px;z-index:4;">
+                            <img src="images/feedPoor.jpg" id="Image5" alt="" style="width:206px;height:152px;"></div>
+                        <form style="margin:0;padding:0;">
+                            <input type="hidden" name="business" value="">
+                            <input type="hidden" name="cmd" value="_donations">
+                            <input type="hidden" name="item_name" value="">
+                            <input type="hidden" name="item_number" value="">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="return" value="">
+                            <input type="hidden" name="cancel_return" value="">
+                            <input type="hidden" name="receiver_email" value="">
+                            <input type="hidden" name="no_shipping" value="0">
+                            <input type="hidden" name="no_note" value="1">
+                            <div id="PayPal1" style="position:absolute;left:75px;top:158px;width:62px;height:31px;z-index:5">
+                                <input type="image" name="submit" src="images/x-click-but04.gif" style="position:absolute;left:0px;top:0px;" alt="Make payments with PayPal, it's fast, free, and secure!">
+                            </div>
+                        </form>
+                    </div>
+                    <h3>Feed The Poor</h3>
+                    <div>
+                        <div id="wb_Image6" style="position:absolute;left:16px;top:4px;width:204px;height:144px;z-index:6;">
+                            <img src="images/FeedPoor1.jpg" id="Image6" alt="" style="width:204px;height:144px;"></div>
+                        <form style="margin:0;padding:0;">
+                            <input type="hidden" name="business" value="">
+                            <input type="hidden" name="cmd" value="_donations">
+                            <input type="hidden" name="item_name" value="">
+                            <input type="hidden" name="item_number" value="">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="return" value="">
+                            <input type="hidden" name="cancel_return" value="">
+                            <input type="hidden" name="receiver_email" value="">
+                            <input type="hidden" name="no_shipping" value="0">
+                            <input type="hidden" name="no_note" value="1">
+                            <div id="PayPal2" style="position:absolute;left:82px;top:154px;width:68px;height:37px;z-index:7">
+                                <input type="image" name="submit" src="images/x-click-but04.gif" style="position:absolute;left:0px;top:0px;" alt="Make payments with PayPal, it's fast, free, and secure!">
+                            </div>
+                        </form>
+                    </div>
+                    <h3>Help in children study</h3>
+                    <div>
+                        <div id="wb_Image7" style="position:absolute;left:17px;top:3px;width:206px;height:152px;z-index:8;">
+                            <img src="images/children-studying.jpg" id="Image7" alt="" style="width:206px;height:152px;"></div>
+                        <form  style="margin:0;padding:0;">
+                            <input type="hidden" name="business" value="">
+                            <input type="hidden" name="cmd" value="_donations">
+                            <input type="hidden" name="item_name" value="">
+                            <input type="hidden" name="item_number" value="">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="return" value="">
+                            <input type="hidden" name="cancel_return" value="">
+                            <input type="hidden" name="receiver_email" value="">
+                            <input type="hidden" name="no_shipping" value="0">
+                            <input type="hidden" name="no_note" value="1">
+                            <div id="PayPal3" style="position:absolute;left:80px;top:160px;width:62px;height:31px;z-index:9">
+                                <input type="image" name="submit" src="images/x-click-but04.gif" style="position:absolute;left:0px;top:0px;" alt="Make payments with PayPal, it's fast, free, and secure!">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="wb_jQueryButton1" style="position:absolute;left:699px;top:150px;width:94px;height:25px;z-index:16;">
+                <a href="IBuserLogin.jsp" id="jQueryButton1" style="width:100%;height:100%;">Login</a></div>
+        </div>
+    </body>
+</html>

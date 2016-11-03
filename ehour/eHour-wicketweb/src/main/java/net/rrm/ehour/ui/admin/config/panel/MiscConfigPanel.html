@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+
+	<body>
+    <table>
+		<wicket:extend>
+            <tr>
+                <td colspan="2" class="header">
+                    <h3 class="sectionHeader"><wicket:message key="admin.config.misc.title" /></h3>
+                </td>
+            </tr>
+
+			<tr>
+				<td><label for="showTurnover"><wicket:message key="admin.config.showTurnover" /></label>:</td>
+				<td><input type="checkbox" id="showTurnover" wicket:id="config.showTurnover" /></td>
+			</tr>
+
+			<tr>
+				<td valign="top"><wicket:message key="admin.config.workHours" />:</td>
+				<td><input class="textInputSmall" wicket:id="config.completeDayHours" style="width: 5em" />
+					<span wicket:id="workHoursValidationError"></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td valign="top"><wicket:message key="admin.config.firstDayWeek" />:</td>
+				<td><select style="width: 15em" class="textInputSmall" wicket:id="firstWeekStart"></select></td>
+			</tr>
+
+            <tr>
+                <td valign="top"><wicket:message key="admin.config.timezone" />:</td>
+                <td><select style="width: 15em" class="textInputSmall" wicket:id="config.timeZone"></select></td>
+            </tr>
+
+
+            <tr>
+                <td colspan="2"><br /></td>
+            </tr>
+
+            <tr>
+                <td valign="top"><wicket:message key="admin.config.pmprivileges.label" />:</td>
+                <td><select style="width: 15em" class="textInputSmall" wicket:id="config.pmPrivilege"></select></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="help"><wicket:message key="admin.config.pmprivileges.help"/></td>
+            </tr>
+
+            <tr>
+                <td valign="top"><label for="splitAdminRole"><wicket:message key="admin.config.splitAdminRole.label"/></label>:</td>
+                <td><input type="checkbox" id="splitAdminRole" wicket:id="config.splitAdminRole" /></td>
+            </tr>
+
+            <tr wicket:id="convertManagers">
+                <td valign="top"><wicket:message key="admin.config.splitAdminRole.existing"/>:</td>
+                <td><select style="width: 15em" class="textInputSmall" wicket:id="convertManagersTo"></select></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="help"><wicket:message key="admin.config.splitAdminRole.help"/></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><br /><br /></td>
+            </tr>
+
+            <wicket:container wicket:id="smtpConfig"></wicket:container>
+
+            <tr>
+                <td colspan="2"><br /><br /></td>
+            </tr>
+
+            <wicket:container wicket:id="reminderConfig"></wicket:container>
+        </wicket:extend>
+    </table>
+	</body>
+</html>

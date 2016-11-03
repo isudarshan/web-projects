@@ -1,0 +1,5 @@
+UserId(PK)   ----------- Bigint    
+password     ----------- Varchar
+SecretKey    ----------- Varchar
+role
+         ----------- varchar   
